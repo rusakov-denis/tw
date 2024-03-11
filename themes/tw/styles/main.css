@@ -1,0 +1,155 @@
+@import './fonts.css';
+
+@tailwind base;
+
+@layer base {
+  :root {
+    --fly-container-w: 1024px;
+    --fly-container-h: 555px;
+    --fly-logo-w: 150px;
+    --fly-logo-h: 70px;
+    --fly-aspect: calc(16 / 9);
+    --fly-duration-y: 7s;
+    --fly-duration-x: calc(var(--fly-duration-y) * var(--fly-aspect));
+  }
+
+  .shower {
+    --slide-ratio: calc(16 / 9);
+
+    &.list {
+      @apply bg-pink-dark;
+    }
+
+    &.full {
+      @apply bg-purple-dark;
+    }
+
+    h1 {
+      @apply text-white;
+      @apply font-oswald;
+    }
+  }
+
+  .slide {
+    @apply shadow-[0_20px_50px_rgb(0_0_0_/_30%)] bg-purple-dark p-[24px_90px_0];
+
+    &::after {
+      @apply w-[calc(50px_*_2.4)] h-auto text-purple-dark right-0 left-auto p-[0_0.5em_0_2.5em] mt-[1em];
+
+      background-image: linear-gradient(
+        100deg,
+        transparent 0 10px,
+        theme(colors.blue) 11px 20px,
+        transparent 21px 30px,
+        theme(colors.blue) 31px 40px,
+        transparent 41px 50px,
+        theme(colors.blue) 51px
+      );
+    }
+
+    h2,
+    h3,
+    > p,
+    figure p,
+    figcaption,
+    li,
+    li::before {
+      @apply text-white;
+    }
+
+    h2 {
+      @apply font-oswald text-[72px];
+    }
+
+    h2.shout {
+      @apply text-9xl;
+    }
+
+    ol,
+    ul {
+      @apply leading-[1.8];
+
+      li {
+        @apply !text-[34px];
+      }
+    }
+
+  }
+
+  footer > p {
+    @apply !mb-0;
+  }
+}
+
+@tailwind components;
+
+@layer components {
+  #case-btn {
+    .button {
+      background-color: theme(colors.purple);
+      border-radius: 27px;
+      border: none;
+      color: #fff;
+      padding: 5px 40px;
+      font: normal 12px/1 'Oswald, sans-serif';
+      transition:
+              background-color .3s,
+              color .3s,
+              translateY .3s;
+
+      &:hover {
+        color: theme(colors.purple);
+        cursor: pointer;
+        background-color: #fff;
+      }
+
+      &:active {
+        transform: translateY(5px);
+      }
+
+      &:disabled {
+        background-color: rgb(208, 208, 208);
+        pointer-events: none;
+      }
+
+      &:focus {
+        outline: 2px solid theme(colors.white);
+        outline-offset: 2px;
+      }
+    }
+  }
+}
+
+@tailwind utilities;
+
+@layer utilities {
+  .bg {
+    @apply bg-[url('../themes/tw/pictures/bg.png')] bg-no-repeat bg-center bg-cover;
+  }
+
+  .scrollbar {
+    &::-webkit-scrollbar {
+      width: 18px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: theme(colors.purple-dark);
+      border-radius: 3px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: theme(colors.blue);
+      border-radius: 3px;
+    }
+  }
+
+  @supports not selector(::-webkit-scrollbar) {
+    .scrollbar {
+      scrollbar-color: theme(colors.blue) theme(colors.purple-dark);
+    }
+  }
+
+  .animate-color-fly-logo {
+    color: hsl(calc(360 / 25 * (var(--fly-color-y) * 5 + var(--fly-color-x)) * 1deg) 100% 50%);
+  }
+}
