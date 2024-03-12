@@ -18,6 +18,10 @@
 
     &.list {
       @apply bg-pink-dark;
+
+      .slide {
+        @apply rounded-[10px];
+      }
     }
 
     &.full {
@@ -62,7 +66,11 @@
     }
 
     h2.shout {
-      @apply text-9xl;
+      @apply text-7xl;
+    }
+
+    a {
+      @apply text-blue;
     }
 
     ol,
@@ -70,76 +78,31 @@
       @apply leading-[1.8];
 
       li {
-        @apply !text-[34px];
+        @apply text-[34px];
       }
     }
 
-  }
-
-  footer > p {
-    @apply !mb-0;
-  }
-}
-
-@tailwind components;
-
-@layer components {
-  #case-btn {
-    .button {
-      background-color: theme(colors.purple);
-      border-radius: 27px;
-      border: none;
-      color: #fff;
-      padding: 5px 40px;
-      font: normal 12px/1 'Oswald, sans-serif';
-      transition:
-              background-color .3s,
-              color .3s,
-              translateY .3s;
-
-      &:hover {
-        color: theme(colors.purple);
-        cursor: pointer;
-        background-color: #fff;
-      }
-
-      &:active {
-        transform: translateY(5px);
-      }
-
-      &:disabled {
-        background-color: rgb(208, 208, 208);
-        pointer-events: none;
-      }
-
-      &:focus {
-        outline: 2px solid theme(colors.white);
-        outline-offset: 2px;
-      }
+    footer > p {
+      @apply mb-0;
     }
-  }
-}
-
-@tailwind utilities;
-
-@layer utilities {
-  .bg {
-    @apply bg-[url('../themes/tw/pictures/bg.png')] bg-no-repeat bg-center bg-cover;
   }
 
   .scrollbar {
     &::-webkit-scrollbar {
-      width: 18px;
+      @apply w-[18px];
+    }
+
+    &::-webkit-scrollbar-track,
+    &::-webkit-scrollbar-thumb {
+      @apply rounded-[4px];
     }
 
     &::-webkit-scrollbar-track {
-      background: theme(colors.purple-dark);
-      border-radius: 3px;
+      @apply  bg-purple-dark;
     }
 
     &::-webkit-scrollbar-thumb {
-      background: theme(colors.blue);
-      border-radius: 3px;
+      @apply  bg-blue;
     }
   }
 
@@ -148,8 +111,17 @@
       scrollbar-color: theme(colors.blue) theme(colors.purple-dark);
     }
   }
+}
+
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .bg {
+    @apply bg-[url('../themes/tw/pictures/bg.png')] bg-no-repeat bg-center bg-cover;
+  }
 
   .animate-color-fly-logo {
-    color: hsl(calc(360 / 25 * (var(--fly-color-y) * 5 + var(--fly-color-x)) * 1deg) 100% 50%);
+    color: hsl(calc(360 / 25 * (var(--fly-color-y) * 5 + var(--fly-color-x)) * 1deg) 100% 50%)
   }
 }

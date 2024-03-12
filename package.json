@@ -6,9 +6,7 @@
   "scripts": {
     "tw-watch": "tailwindcss -i ./themes/tw/styles/main.css -o ./bundled/main.css --watch",
     "tw-build": "tailwindcss -i ./themes/tw/styles/main.css -o ./bundled/main.css --minify",
-    "watch": "shower serve & npm run tw-watch",
-    "build": "shower bundle --files '**' --files '!{node_modules,bundled}{,/**}' & npm run tw-build",
-    "publish": "shower publish --files '**' --files '!{node_modules,bundled}{,/**}'"
+    "watch": "shower serve & npm run tw-watch"
   },
   "files": [
     "pictures/**",

@@ -15,8 +15,8 @@ module.exports = {
       minWidth: '320px',
     },
     colors: {
+      gray: '#808080',
       white: '#fff',
-      purple: '#7927e0',
       blue: '#38bdf8',
       red: '#ff0000',
       'pink-dark': '#2b213a',
