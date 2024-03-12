@@ -3,6 +3,7 @@ import type { Config } from 'tailwindcss';
 module.exports = {
   content: ['./index.html'],
   darkMode: 'selector',
+  important: '.shower',
   theme: {
     screens: {
       fullWidth: '1920px',
@@ -59,5 +60,4 @@ module.exports = {
       },
     },
   },
-  important: '.shower',
 } satisfies Config;

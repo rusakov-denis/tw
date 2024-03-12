@@ -1,8 +1,16 @@
-@import './fonts.css';
-
 @tailwind base;
 
 @layer base {
+  @font-face {
+    font-family: 'Oswald';
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+    src:
+      url('../themes/tw/fonts/Oswald/Bold.woff2') format('woff2'),
+      url('../themes/tw/fonts/Oswald/Bold.ttf') format('truetype');
+  }
+
   :root {
     --fly-container-w: 1024px;
     --fly-container-h: 555px;
@@ -20,7 +28,7 @@
       @apply bg-pink-dark;
 
       .slide {
-        @apply rounded-[10px];
+        @apply rounded-md;
       }
     }
 
@@ -35,10 +43,10 @@
   }
 
   .slide {
-    @apply shadow-[0_20px_50px_rgb(0_0_0_/_30%)] bg-purple-dark p-[24px_90px_0];
+    @apply bg-purple-dark p-[24px_90px_0] shadow-[0_20px_50px_rgb(0_0_0_/_30%)];
 
     &::after {
-      @apply w-[calc(50px_*_2.4)] h-auto text-purple-dark right-0 left-auto p-[0_0.5em_0_2.5em] mt-[1em];
+      @apply left-auto right-0 mt-[1em] h-auto w-[calc(50px_*_2.4)] p-[0_0.5em_0_2.5em] text-purple-dark;
 
       background-image: linear-gradient(
         100deg,
@@ -83,7 +91,7 @@
     }
 
     footer > p {
-      @apply mb-0;
+      @apply mb-0 leading-[40px];
     }
   }
 
@@ -94,15 +102,15 @@
 
     &::-webkit-scrollbar-track,
     &::-webkit-scrollbar-thumb {
-      @apply rounded-[4px];
+      @apply rounded-md;
     }
 
     &::-webkit-scrollbar-track {
-      @apply  bg-purple-dark;
+      @apply bg-purple-dark;
     }
 
     &::-webkit-scrollbar-thumb {
-      @apply  bg-blue;
+      @apply bg-blue;
     }
   }
 
@@ -118,10 +126,10 @@
 
 @layer utilities {
   .bg {
-    @apply bg-[url('../themes/tw/pictures/bg.png')] bg-no-repeat bg-center bg-cover;
+    @apply bg-[url('../themes/tw/pictures/bg.png')] bg-cover bg-center bg-no-repeat;
   }
 
   .animate-color-fly-logo {
-    color: hsl(calc(360 / 25 * (var(--fly-color-y) * 5 + var(--fly-color-x)) * 1deg) 100% 50%)
+    color: hsl(calc(360 / 25 * (var(--fly-color-y) * 5 + var(--fly-color-x)) * 1deg) 100% 50%);
   }
 }
