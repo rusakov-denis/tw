@@ -1,13 +1,12 @@
-# Презентация «TailwindCSS. Попутный ветер перемен»
+# Презентация «TailwindCSS: Попутный ветер перемен»
 
 <img src="./themes/tw/pictures/logo.svg" width="250" height="120" alt="Логотип">
-
 
 ## Как начать?
 
 Команда для отслеживания изменений в стилях
 
-    npm run tw-watch 
+    npm run tw-watch
 
 Команда для сборки стилей
 
@@ -15,4 +14,4 @@
 
 Команда для отслеживания изменений на проекте
 
-    npm run watch 
+    npm run watch

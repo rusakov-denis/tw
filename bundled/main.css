@@ -566,6 +566,17 @@ video {
       font-size: 34px;
     }
   }
+  table {
+    th,
+      td {
+      --tw-text-opacity: 1;
+      color: rgb(255 255 255 / var(--tw-text-opacity));
+    }
+    th {
+    }
+    td {
+    }
+  }
   footer > p {
     margin-bottom: 0px;
   }
@@ -698,6 +709,17 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.shower :is(.not-sr-only) {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
+
 .shower :is(.absolute) {
   position: absolute;
 }
@@ -806,6 +828,10 @@ video {
   display: inline-flex;
 }
 
+.shower :is(.table) {
+  display: table;
+}
+
 .shower :is(.grid) {
   display: grid;
 }
@@ -852,6 +878,10 @@ video {
 
 .shower :is(.w-\[400px\]) {
   width: 400px;
+}
+
+.shower :is(.w-\[90\%\]) {
+  width: 90%;
 }
 
 .shower :is(.w-\[var\(--fly-container-w\)\]) {
@@ -1014,6 +1044,10 @@ video {
 
 .shower :is(.justify-center) {
   justify-content: center;
+}
+
+.shower :is(.justify-between) {
+  justify-content: space-between;
 }
 
 .shower :is(.gap-4) {

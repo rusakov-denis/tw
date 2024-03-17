@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <title>TailwindCSS. Попутный ветер перемен</title>
+    <title>TailwindCSS: Попутный ветер перемен</title>
     <link rel="stylesheet" href="./themes/ribbon/styles/styles.css" />
     <link rel="stylesheet" href="./bundled/main.css" />
     <meta name="description" content="Презентация по TailwindCSS" />
-    <link rel="icon" href="./themes/tw/pictures/logo.svg" type="image/svg+xml" />
+    <link rel="icon" href="./themes/tw/images/logo.svg" type="image/svg+xml" />
   </head>
   <body class="shower list scrollbar dark:bg-purple-dark">
     <header class="caption">
-      <h1>TailwindCSS. Попутный ветер перемен.</h1>
+      <h1>TailwindCSS: Попутный ветер перемен.</h1>
       <p>
         <i>Денис Русаков</i>
       </p>
@@ -85,7 +85,7 @@
           </defs>
         </svg>
         <div class="text-center">
-          <h2 class="m-0 text-5xl dark:text-white">TailwindCSS. Попутный ветер перемен</h2>
+          <h2 class="m-0 text-5xl dark:text-white">TailwindCSS: Попутный ветер перемен</h2>
           <p class="text-md mb-2 dark:text-white">
             <i>Денис Русаков</i>
           </p>
@@ -111,8 +111,9 @@
       </ol>
       <img
         class="float-right hidden w-[300px] -translate-y-[250px] rounded-lg group-has-[#cases.active_+_#libs:not(.active)]:block"
-        src="./themes/tw/pictures/memes/cat.jpg"
-        alt=""
+        src="./themes/tw/images/memes/cat.jpg"
+        width="300"
+        alt="183"
         aria-hidden="true"
       />
     </section>
@@ -124,13 +125,12 @@
         <li class="next">Необходимо писать темизацию</li>
         <li class="next">Импорт конфигов в&nbsp;каждом файле</li>
         <li class="next">Некоторые препроцессоры устарели</li>
-        <!-- #TODO: Дополнить -->
       </ul>
     </section>
 
     <section class="slide">
       <h2 class="shout">Что ты&nbsp;такое <i>Tailwind</i> ?</h2>
-      <img class="cover h" src="./themes/tw/pictures/memes/what.jpg" alt="Мем. Что ты такое" aria-hidden="true" />
+      <img class="cover h" src="./themes/tw/images/memes/what.jpg" alt="Мем. Что ты такое" aria-hidden="true" />
       <footer>
         <p>Tailwind&nbsp;&mdash; lodash в&nbsp;мире CSS</p>
       </footer>
@@ -205,13 +205,6 @@
     </section>
 
     <section class="slide">
-      <img class="cover" src="./themes/tw/pictures/basics/size.jpg" alt="Размер пакета" />
-      <footer>
-        <p>Объяснить вес пакета и&nbsp;сказать, что об&nbsp;оптимизации поговорим позже</p>
-      </footer>
-    </section>
-
-    <section class="slide">
       <img class="cover" src="./themes/tw/pictures/basics/issues.jpg" alt="Issues" />
     </section>
 
@@ -258,7 +251,9 @@
       <img class="cover" src="./themes/tw/pictures/using/install/step-3.svg" alt="Установка. Шаг 3" />
       <img
         class="next float-right w-[400px] translate-x-[50px] translate-y-[50px] rounded-md"
-        src="./themes/tw/pictures/memes/three.jpg"
+        src="./themes/tw/images/memes/three.jpg"
+        width="400"
+        height="400"
         alt="Мем. Вы всегда втроём"
       />
       <footer>
@@ -282,7 +277,7 @@
     </section>
 
     <section class="slide">
-      <img class="cover" src="./themes/tw/pictures/memes/daniel.jpg" alt="Мем. Daniel" />
+      <img class="cover" src="./themes/tw/images/memes/daniel.jpg" alt="Мем. Daniel" />
     </section>
 
     <section class="slide">
@@ -471,15 +466,6 @@
     </section>
 
     <section class="slide">
-      <h2>Брекпоинты с&nbsp;max-width</h2>
-      <img
-        class="cover mt-10"
-        src="./themes/tw/pictures/capabilites/screens/max-width.svg"
-        alt="Брекпоинты с max-width"
-      />
-    </section>
-
-    <section class="slide">
       <h2>Брекпоинты в&nbsp;скриптах</h2>
       <img class="cover" src="./themes/tw/pictures/capabilites/screens/in-scripts.svg" alt="Брекпоинты в скриптах" />
     </section>
@@ -549,12 +535,7 @@
           class="text-md inline-flex cursor-not-allowed items-center rounded-md bg-white px-6 py-4 font-oswald leading-6 transition duration-150 ease-in-out dark:text-purple-dark"
           disabled
         >
-          <svg
-            class="-ml-1 mr-3 h-5 w-5 animate-spin"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-          >
+          <svg class="-ml-1 mr-3 h-5 w-5 animate-spin" fill="none" viewBox="0 0 24 24">
             <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
             <path
               class="opacity-75"
@@ -605,7 +586,7 @@
       <h2>Вендорные префиксы</h2>
       <ul>
         <li>
-          <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer">TailwindCSS CLI</a>
+          <a href="https://tailwindcss.com" target="_blank" rel="noopener noreferrer">TailwindCSS CLI</a>
         </li>
         <li class="next">
           <a href="https://github.com/autoprefixer/autoprefixer.github.io" target="_blank" rel="noopener noreferrer"
@@ -619,17 +600,25 @@
       <h2>Доступность</h2>
       <img class="cover mt-10" src="./themes/tw/pictures/capabilites/a11y/sr-only.svg" alt="Доступность. Sr only" />
       <footer>
-        <p>Из коробки есть 2 класса, если вам нужно что-то скрыть (можно использовать вместо visibility-hidden)</p>
+        <p>
+          Из&nbsp;коробки есть 2&nbsp;класса, если вам нужно что-то скрыть (можно использовать вместо visibility-hidden)
+        </p>
       </footer>
     </section>
 
     <section class="slide">
-      <h2>Доступность</h2>
-      <img
-        class="cover mt-10"
-        src="./themes/tw/pictures/capabilites/a11y/not-sr-only.svg"
-        alt="Доступность. Not sr only"
-      />
+      <img class="cover" src="./themes/tw/pictures/capabilites/a11y/not-sr-only.svg" alt="Доступность. Not sr only" />
+    </section>
+
+    <section class="slide">
+      <img class="cover" src="./themes/tw/pictures/capabilites/a11y/using.svg" alt="Доступность. Пример" />
+      <footer>
+        <p>
+          Используйте not-sr-only для отмены sr-only, делая элемент видимым, а&nbsp;также для программ чтения
+          с&nbsp;экрана. Это может быть полезно, если вы&nbsp;хотите визуально скрыть что-то на&nbsp;маленьких экранах,
+          но&nbsp;показать это на&nbsp;больших экранах, например:
+        </p>
+      </footer>
     </section>
 
     <section class="slide">
@@ -754,13 +743,13 @@
     <section class="slide">
       <h2>Оптимизация</h2>
       <ul>
-        <li class="next">Ключ <i>&mdash;minify</i> (Tailwind CLI)</li>
-        <li class="next"><a href="https://cssnano.co/" target="_blank" rel="noopener noreferrer">CSSNano</a></li>
+        <li class="next">Опция <i>&mdash;minify</i> (Tailwind CLI)</li>
+        <li class="next"><a href="https://cssnano.co" target="_blank" rel="noopener noreferrer">CSSNano</a></li>
         <li class="next">
           <a href="https://github.com/google/brotli" target="_blank" rel="noopener noreferrer">Brotli</a>
         </li>
       </ul>
-      <a class="copyright" href="https://habr.com/ru/articles/774524/" target="_blank" rel="noopener noreferrer">
+      <a class="copyright" href="https://habr.com/ru/articles/774524" target="_blank" rel="noopener noreferrer">
         Сравнение производительности
       </a>
     </section>
@@ -772,7 +761,6 @@
 
     <section class="slide bg">
       <h2 class="shout">Кейсы</h2>
-      <!-- #TODO: Дополнить -->
     </section>
 
     <section class="slide">
@@ -795,11 +783,9 @@
         </p>
         <p>
           Николас отмечает в&nbsp;статье, что масштабируемый HTML/CSS должен &laquo;полагаться на&nbsp;классы внутри
-          HTML, чтобы обеспечить возможность создания повторно используемых компонентов&raquo; . Поэтому вместо
-          использования имени класса, зависящего от&nbsp;содержимого, например &laquo;news&raquo;, следует использовать
-          независимое от&nbsp;содержимого имя, например &laquo;uilist&raquo; или &laquo;uilist-item&raquo;: Чем более
-          общее имя, тем более оно пригодно для повторного использования. Он&nbsp;использовал знаменитый медиа-объект
-          как яркий пример многократного использования CSS.
+          HTML, чтобы обеспечить возможность создания повторно используемых компонентов&raquo;. Чем более общее имя, тем
+          более оно пригодно для повторного использования. Он&nbsp;использовал знаменитый медиа-объект как яркий пример
+          многократного использования CSS.
         </p>
       </footer>
     </section>
@@ -930,8 +916,10 @@
       <img class="cover" src="./themes/tw/pictures/cases/spacing/step-2.svg" alt="Отступы. Шаг 2" />
       <img
         class="float-right w-[300px] translate-y-[100px] rounded-lg"
-        src="./themes/tw/pictures/memes/space-x.jpg"
+        src="./themes/tw/images/memes/space-x.jpg"
         alt=""
+        width="300"
+        height="257"
         aria-hidden="true"
       />
     </section>
@@ -992,7 +980,7 @@
 
     <section class="slide">
       <img class="cover" src="./themes/tw/pictures/libs-and-plugins/ui/promo.jpg" alt="Tailwind UI. Promo" />
-      <a class="copyright" href="https://tailwindui.com/" target="_blank" rel="noopener noreferrer">Tailwind UI</a>
+      <a class="copyright" href="https://tailwindui.com" target="_blank" rel="noopener noreferrer">Tailwind UI</a>
       <footer>
         <p>Есть по&nbsp;одному бесплатному примеру на&nbsp;категорию, но&nbsp;к&nbsp;сожалению остальное платное</p>
         <p>QR&nbsp;кодов не&nbsp;будет, если есть полезная ссылка, то&nbsp;будет в&nbsp;правом нижнем углу</p>
@@ -1008,7 +996,7 @@
 
     <section class="slide">
       <img class="cover" src="./themes/tw/pictures/libs-and-plugins/catalyst.jpg" alt="Catalyst" />
-      <a class="copyright" href="https://catalyst.tailwindui.com/">https://catalyst.tailwindui.com/</a>
+      <a class="copyright" href="https://catalyst.tailwindui.com">https://catalyst.tailwindui.com</a>
       <footer>
         <p>
           Catalyst&nbsp;&mdash; это система компонентов с&nbsp;батарейным питанием и&nbsp;тщательно разработанными API,
@@ -1020,35 +1008,66 @@
     </section>
 
     <section class="slide">
+      <img class="cover" src="./themes/tw/pictures/libs-and-plugins/radix/promo.jpg" alt="Radix UI. Promo" />
+      <a class="copyright" href="https://www.radix-ui.com">https://www.radix-ui.com</a>
+    </section>
+
+    <section class="slide">
+      <img class="cover" src="./themes/tw/pictures/libs-and-plugins/radix/example.svg" alt="Radix UI. Example" />
+    </section>
+
+    <section class="slide">
+      <img class="cover" src="./themes/tw/pictures/libs-and-plugins/shadcn/promo.jpg" alt="Shadcn. Promo" />
+    </section>
+
+    <section class="slide">
+      <img class="cover" src="./themes/tw/pictures/libs-and-plugins/shadcn/date-picker.svg" alt="Shadcn. Date picker" />
+    </section>
+
+    <section class="slide relative">
+      <video
+        preload="metadata"
+        class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+        controls
+        controlslist="nodownload nofullscreen noremoteplayback"
+        muted
+        poster="./themes/tw/pictures//libs-and-plugins/catalyst.jpg"
+        width="600"
+      >
+        <source src="./themes/tw/video/date-picker.webm" type="video/webm" />
+      </video>
+    </section>
+
+    <section class="slide">
       <h2>Ещё библиотеки</h2>
       <ul class="columns two">
         <li class="next">
-          <a href="https://tw-elements.com/" target="_blank" rel="noopener noreferrer">TW&nbsp;Elements</a>
+          <a href="https://tw-elements.com" target="_blank" rel="noopener noreferrer">TW&nbsp;Elements</a>
         </li>
         <li class="next">
-          <a href="https://tailwindcomponents.com/" target="_blank" rel="noopener noreferrer">Tailwind Components</a>
+          <a href="https://tailwindcomponents.com" target="_blank" rel="noopener noreferrer">Tailwind Components</a>
         </li>
         <li class="next">
-          <a href="https://tailblocks.cc/" target="_blank" rel="noopener noreferrer">Tailblocks</a>
+          <a href="https://tailblocks.cc" target="_blank" rel="noopener noreferrer">Tailblocks</a>
         </li>
         <li class="next">
-          <a href="https://flowbite.com/" target="_blank" rel="noopener noreferrer">Flowbite</a>
+          <a href="https://flowbite.com" target="_blank" rel="noopener noreferrer">Flowbite</a>
         </li>
-        <li class="next"><a href="https://merakiui.com/" target="_blank" rel="noopener noreferrer">Meraki UI</a></li>
+        <li class="next"><a href="https://merakiui.com" target="_blank" rel="noopener noreferrer">Meraki UI</a></li>
         <li class="next">
-          <a href="https://nextui.org/" target="_blank" rel="noopener noreferrer">Next UI</a>
-        </li>
-        <li class="next">
-          <a href="https://preline.co/" target="_blank" rel="noopener noreferrer">Preline UI</a>
+          <a href="https://nextui.org" target="_blank" rel="noopener noreferrer">Next UI</a>
         </li>
         <li class="next">
-          <a href="https://www.ripple-ui.com/" target="_blank" rel="noopener noreferrer">Ripple UI</a>
+          <a href="https://preline.co" target="_blank" rel="noopener noreferrer">Preline UI</a>
         </li>
         <li class="next">
-          <a href="https://sailboatui.com/" target="_blank" rel="noopener noreferrer">Sailboat UI</a>
+          <a href="https://www.ripple-ui.com" target="_blank" rel="noopener noreferrer">Ripple UI</a>
         </li>
         <li class="next">
-          <a href="https://daisyui.com/" target="_blank" rel="noopener noreferrer">Daisy UI</a>
+          <a href="https://sailboatui.com" target="_blank" rel="noopener noreferrer">Sailboat UI</a>
+        </li>
+        <li class="next">
+          <a href="https://daisyui.com" target="_blank" rel="noopener noreferrer">Daisy UI</a>
         </li>
       </ul>
       <footer>
@@ -1075,59 +1094,14 @@
       </ul>
     </section>
 
-    <section class="slide relative">
-      <div class="absolute left-1/2 top-1/2 w-[1000px] -translate-x-1/2 -translate-y-1/2 text-center">
-        <h2>Tailwind + SASS</h2>
-        <p class="next mb-0 font-oswald text-6xl text-white">А&nbsp;зачем?</p>
-      </div>
-      <footer>
-        <p>
-          Самое важное, что нужно понимать при использовании Tailwind с&nbsp;препроцессором,&nbsp;&mdash; это&nbsp;то,
-          что препроцессоры, такие как Sass, Less и&nbsp;Stylus, запускаются отдельно до&nbsp;Tailwind. Это означает,
-          что вы&nbsp;не&nbsp;можете передавать выходные данные функции Tailwind, theme()например, в&nbsp;функцию цвета
-          Sass, потому что функция theme()фактически не&nbsp;оценивается до&nbsp;тех пор, пока ваш Sass не&nbsp;будет
-          скомпилирован в&nbsp;CSS и&nbsp;не&nbsp;передан в&nbsp;PostCSS.
-        </p>
-        <p>
-          Поскольку Tailwind&nbsp;&mdash; это плагин PostCSS, ничто не&nbsp;мешает вам использовать его с&nbsp;Sass,
-          точно так&nbsp;же, как вы&nbsp;можете использовать другие плагины PostCSS, такие как Autoprefixer .
-        </p>
-        <p>
-          С&nbsp;Tailwind у&nbsp;нас есть предопределенный набор стилей, тогда как с&nbsp;SASS у&nbsp;нас больше
-          контроля над отдельными компонентами
-        </p>
-        <p>
-          Tailwind фокусируется на&nbsp;служебных классах, а&nbsp;SASS предлагает большую гибоксть при написании
-          пользовательских стилей
-        </p>
-      </footer>
-    </section>
-
-    <section class="slide">
-      <img class="cover" src="./themes/tw/pictures/libs-and-plugins/sass/flex.svg" alt="Sass. Flex" />
-      <footer>
-        <p>
-          Flexbox настолько юзабельная штука, что сейчас от&nbsp;проекта к&nbsp;проекту приходится копировать классы
-          (мы&nbsp;создаем Tailwind?)
-        </p>
-      </footer>
-    </section>
-
-    <section class="slide">
-      <img class="cover" src="./themes/tw/pictures/libs-and-plugins/sass/mixins.svg" alt="Sass. Mixins" />
-      <footer>
-        <p>Теперь не&nbsp;нужны миксины и&nbsp;можем создавать свои utilities классы</p>
-      </footer>
-    </section>
-
-    <section class="slide">
+    <!-- <section class="slide">
       <h2>CSS-in-JS <span class="text-2xl">(Vanilla Extract, Stylex и&nbsp;т.д.)</span></h2>
       <ul>
         <li class="next">предлагает возможность писать CSS внутри&nbsp;JS</li>
         <li class="next">обеспечивает изоляцию стилей для компонентов</li>
         <li class="next">позволяет использовать динамические стили</li>
       </ul>
-    </section>
+    </section> -->
 
     <section class="slide">
       <img class="cover" src="./themes/tw/pictures/libs-and-plugins/prettier.jpg" alt="Prettier" />
@@ -1188,6 +1162,10 @@
     </section>
 
     <section class="slide">
+      <img class="cover" src="./themes/tw/pictures/libs-and-plugins/merge/util.svg" alt="Class names util" />
+    </section>
+
+    <section class="slide">
       <img class="cover" src="./themes/tw/pictures/libs-and-plugins/rtl.gif" alt="RTL" />
       <a class="copyright" href="https://github.com/20lives/tailwindcss-rtl" target="_blank" rel="noopener noreferrer"
         >tailwindcss-rtl</a
@@ -1225,7 +1203,7 @@
     </section>
 
     <section class="slide">
-      <img class="cover" src="./themes/tw/pictures/libs-and-plugins/figma.jpg" alt="Figma tailwindcss" />
+      <img class="cover" src="./themes/tw/pictures/libs-and-plugins/figma/promo.jpg" alt="Figma tailwindcss. Promo" />
       <a
         class="copyright"
         href="https://www.figma.com/community/plugin/785619431629077634/figma-tailwindcss?searchSessionId=lto5775p-yvu9kzvah5o"
@@ -1289,16 +1267,11 @@
         title="input otp"
         width="90%"
         height="90%"
-        src="https://input-otp.rodz.dev/"
+        src="https://input-otp.rodz.dev"
       ></iframe>
       <footer>
-        <p>Будующее уже здесь. Выходит плагин и&nbsp;уже в&nbsp;README описаны настройки и&nbsp;tailwind</p>
+        <p>Будущее уже здесь. Выходит плагин и&nbsp;уже в&nbsp;README описаны настройки и&nbsp;tailwind</p>
       </footer>
-      <script>
-        document.addEventListener('DOMContentLoaded', () => {
-          localStorage.setItem('theme', 'dark');
-        });
-      </script>
     </section>
 
     <section class="slide">
@@ -1311,16 +1284,16 @@
           >
         </li>
         <li class="next">
-          <a href="https://bulma.io/" target="_blank" rel="noopener noreferrer">Bulma</a>
+          <a href="https://bulma.io" target="_blank" rel="noopener noreferrer">Bulma</a>
         </li>
         <li class="next">
-          <a href="https://get.foundation/" target="_blank" rel="noopener noreferrer">Foundation</a>
+          <a href="https://get.foundation" target="_blank" rel="noopener noreferrer">Foundation</a>
         </li>
         <li class="next">
-          <a href="https://mui.com/" target="_blank" rel="noopener noreferrer"> MUI </a>
+          <a href="https://mui.com" target="_blank" rel="noopener noreferrer">MUI</a>
         </li>
         <li class="next">
-          <a href="https://tachyons.io/" target="_blank" rel="noopener noreferrer"> Tachyons </a>
+          <a href="https://tachyons.io" target="_blank" rel="noopener noreferrer">Tachyons</a>
         </li>
         <li class="next">...</li>
       </ul>
@@ -1346,10 +1319,10 @@
       <h2>Что ещё хорошо?</h2>
       <ul>
         <li class="next">
-          <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer">Документация</a>
+          <a href="https://tailwindcss.com" target="_blank" rel="noopener noreferrer">Документация</a>
         </li>
         <li class="next">
-          <a href="https://play.tailwindcss.com/" target="_blank" rel="noopener noreferrer">Песочница</a>
+          <a href="https://play.tailwindcss.com" target="_blank" rel="noopener noreferrer">Песочница</a>
         </li>
         <li class="next">
           <a href="https://www.youtube.com/tailwindlabs" target="_blank" rel="noopener noreferrer">Видео-уроки</a>
@@ -1382,28 +1355,121 @@
     </section>
 
     <section class="slide">
-      <h2>Выводы</h2>
-      <ol>
-        <li class="next">Быстро</li>
-        <li class="next">Кроссплатформенно</li>
-        <li class="next">Поддержка</li>
-        <li class="next">Масштабирование</li>
-        <li class="next">Хорошо спроектирован (нулевое время выполнения)</li>
-        <li class="next">Не&nbsp;нужно придумывать название классам</li>
-        <!--        <li class="next">-->
-        <!--          не&nbsp;нужно переключаться между файлами со&nbsp;стилями-->
-        <!--          <span class="next">(но&nbsp;нужно переключаться в&nbsp;доку, чтобы узнать класс)</span>-->
-        <!--        </li>-->
-        <!-- <li class="next">чем более общее, имя тем более оно пригодно для повторного использования</li> -->
-        <!-- <li class="next">меньше неиспользуемого кода</li >-->
-        <!-- <li class="next">необходимо договориться об&nbsp;правилах</li> -->
-      </ol>
+      <h2 id="difference">Сравнение подходов</h2>
+      <table aria-describedby="difference">
+        <thead>
+          <tr>
+            <th scope="column"></th>
+            <th scope="column">CSS-modules (+SASS)</th>
+            <th scope="column">CSS-in-JS</th>
+            <th scope="column">Семантический CSS</th>
+            <th scope="column">Tailwind</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Size Bundle</th>
+            <td>✅</td>
+            <td>❌</td>
+            <td>✅</td>
+            <td>🔥</td>
+          </tr>
+          <tr>
+            <th scope="row">Scoped Styles</th>
+            <td>✅</td>
+            <td>✅</td>
+            <td>❌</td>
+            <td>✅</td>
+          </tr>
+          <tr>
+            <th scope="row">Better Tooling</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Runtime Overhead</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Dynamic Styles</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Performance Optimizations</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Learning Curve</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Debugging Complexity</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="note">Меньше JS = более быстрый сайт</p>
+    </section>
+
+    <section class="slide relative">
+      <div class="absolute left-1/2 top-1/2 w-[1000px] -translate-x-1/2 -translate-y-1/2 text-center">
+        <h2>Tailwind + SASS</h2>
+        <p class="next mb-0 font-oswald text-6xl text-white">А&nbsp;зачем?</p>
+      </div>
       <footer>
         <p>
-          В&nbsp;итоге, Tailwind является очень полезным инструментом для разработки пользовательских интерфейсов,
-          который позволяет значительно ускорить процесс создания и&nbsp;поддержки кода, а&nbsp;также создавать
-          уникальные и&nbsp;адаптивные интерфейсы без необходимости писать каждый раз новые стили.
+          Самое важное, что нужно понимать при использовании Tailwind с&nbsp;препроцессором,&nbsp;&mdash; это&nbsp;то,
+          что препроцессоры, такие как Sass, Less и&nbsp;Stylus, запускаются отдельно до&nbsp;Tailwind. Это означает,
+          что вы&nbsp;не&nbsp;можете передавать выходные данные функции Tailwind, theme()например, в&nbsp;функцию цвета
+          Sass, потому что функция theme()фактически не&nbsp;оценивается до&nbsp;тех пор, пока ваш Sass не&nbsp;будет
+          скомпилирован в&nbsp;CSS и&nbsp;не&nbsp;передан в&nbsp;PostCSS.
         </p>
+        <p>
+          Поскольку Tailwind&nbsp;&mdash; это плагин PostCSS, ничто не&nbsp;мешает вам использовать его с&nbsp;Sass,
+          точно так&nbsp;же, как вы&nbsp;можете использовать другие плагины PostCSS, такие как Autoprefixer .
+        </p>
+        <p>
+          С&nbsp;Tailwind у&nbsp;нас есть предопределенный набор стилей, тогда как с&nbsp;SASS у&nbsp;нас больше
+          контроля над отдельными компонентами
+        </p>
+        <p>
+          Tailwind фокусируется на&nbsp;служебных классах, а&nbsp;SASS предлагает большую гибоксть при написании
+          пользовательских стилей
+        </p>
+      </footer>
+    </section>
+
+    <section class="slide">
+      <img class="cover" src="./themes/tw/pictures/libs-and-plugins/sass/flex.svg" alt="Sass. Flex" />
+      <footer>
+        <p>
+          Flexbox настолько юзабельная штука, что сейчас от&nbsp;проекта к&nbsp;проекту приходится копировать классы
+          (мы&nbsp;создаем Tailwind?)
+        </p>
+      </footer>
+    </section>
+
+    <section class="slide">
+      <img class="cover" src="./themes/tw/pictures/libs-and-plugins/sass/mixins.svg" alt="Sass. Mixins" />
+      <footer>
+        <p>Теперь не&nbsp;нужны миксины и&nbsp;можем создавать свои utilities классы</p>
       </footer>
     </section>
 
@@ -1433,46 +1499,38 @@
     </section>
 
     <section class="slide">
-      <img class="cover" src="./themes/tw/pictures/libs-and-plugins/merge/class-names-util.svg" alt="" />
+      <img class="cover" src="./themes/tw/pictures/nextjs-starter.jpg" alt="Next.js starter" />
+      <a class="copyright" href="https://github.com/webpractik/nextjs-starter">nextjs-starter</a>
     </section>
 
-    <!--    <section class="slide">3</section>-->
+    <section class="slide relative">
+      <h2>Coming soon</h2>
+      <div class="absolute left-1/2 top-1/2 flex w-[90%] -translate-x-1/2 -translate-y-1/2 justify-between">
+        <img class="next" src="./themes/tw/images/wp/logo.svg" width="250" height="250" alt="Wp team" />
+        <img class="next" src="./themes/tw/images/wp/wp-team.svg" width="250" height="250" alt="Wp logo" />
+        <img class="next rounded-lg" src="./themes/tw/images/wp/cp.web.jpg" width="250" height="250" alt="Cp web" />
+      </div>
+    </section>
 
-    <!--    <section class="slide">10</section>-->
-
-    <!--    <section class="slide">11</section>-->
-
-    <!--    <section class="slide">12 style-dictionary</section>-->
-
-    <!-- #TODO: написать зачем доступность -->
-
-    <!--    <section class="slide">-->
-    <!--      <p>+ главный фреймворк</p>-->
-    <!--    </section>-->
-    <!--    https://www.figma.com/file/c8xIAkParNdlIqy5NczMbi/AI'm-Doctor-(%D0%B2%D0%BD%D1%83%D1%82%D1%80%D0%B5%D0%BD%D0%BD%D1%8F%D1%8F)-(Copy)?type=design&node-id=22-4&mode=design&t=5eZGtyPHauqwWNU5-0-->
-
-    <!--    <section class="slide">-->
-    <!--      <p>figma плагин, нужен скрин для наглядности</p>-->
-    <!--    </section>-->
-
-    <!--    <section class="slide">-->
-    <!--      <p>-->
-    <!--        можно добавить где нибудь, что снизится когнитивная нагрузка (4 3 источника - разметка, стили, браузер, макет)-->
-    <!--      </p>-->
-    <!--    </section>-->
-
-    <!--    <section class="slide">-->
-    <!--      <p>добавить более наглядный пример как внедряется в текущий проект</p>-->
-    <!--    </section>-->
-
-    <!--    <section class="slide">-->
-    <!--      <p>-->
-    <!--        добавить, что в сборке некста теперь по умолчанию будет настроенный tw и базовые компоненты на tw итог: внедряем-->
-    <!--        на все новые проекты; можно внедрять на внутр проекты (cp.wp, wp, и тд); с июня разрешаем внедрять в текущие-->
-    <!--        проекты-->
-    <!--      </p>-->
-    <!--      <a class="copyright" href="https://github.com/webpractik/nextjs-starter"> nextjs-starter </a>-->
-    <!--    </section>-->
+    <section class="slide">
+      <h2>Выводы</h2>
+      <ol>
+        <li class="next">Быстрый</li>
+        <li class="next">Кроссплатформенный</li>
+        <li class="next">Масштабируемый</li>
+        <li class="next">Позволяет уменьшить когнитивную нагрузку</li>
+        <li class="next">Хорошо спроектирован (нулевое время выполнения)</li>
+        <!-- <li class="next">Не&nbsp;нужно придумывать названия классам</li> -->
+        <!-- <li class="next">Меньше неиспользуемого кода</li> -->
+      </ol>
+      <footer>
+        <p>
+          В&nbsp;итоге, Tailwind является очень полезным инструментом для разработки пользовательских интерфейсов,
+          который позволяет значительно ускорить процесс создания и&nbsp;поддержки кода, а&nbsp;также создавать
+          уникальные и&nbsp;адаптивные интерфейсы без необходимости писать каждый раз новые стили.
+        </p>
+      </footer>
+    </section>
 
     <section class="slide bg clear">
       <h2 class="shout">Всем спасибо!</h2>
@@ -1483,7 +1541,6 @@
       <div class="absolute left-0 top-0 m-auto h-[var(--fly-container-h)] w-[var(--fly-container-w)]">
         <svg
           class="h-[var(--fly-logo-h)]] animate-color-fly-logo absolute z-0 m-auto w-[var(--fly-logo-w)] animate-fly-logo"
-          xmlns="http://www.w3.org/2000/svg"
           fill="currentColor"
           viewBox="0 0 54 33"
         >

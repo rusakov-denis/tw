@@ -90,6 +90,19 @@
       }
     }
 
+    table {
+      th,
+      td {
+        @apply text-white;
+      }
+
+      th {
+      }
+
+      td {
+      }
+    }
+
     footer > p {
       @apply mb-0 leading-[40px];
     }
