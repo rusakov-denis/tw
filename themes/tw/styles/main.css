@@ -29,6 +29,10 @@
 
       .slide {
         @apply rounded-md;
+
+        footer {
+          @apply translate-y-[calc(100%_+_1px)];
+        }
       }
     }
 
@@ -61,9 +65,10 @@
 
     h2,
     h3,
-    > p,
+    p,
     figure p,
     figcaption,
+    p.note,
     li,
     li::before {
       @apply text-white;
@@ -91,20 +96,29 @@
     }
 
     table {
+      @apply mb-0;
+
       th,
       td {
         @apply text-white;
       }
 
+      th[scope='column'],
+      td {
+        @apply text-center;
+      }
+
       th {
+        @apply text-[18px];
       }
 
       td {
+        @apply text-[20px];
       }
     }
 
     footer > p {
-      @apply mb-0 leading-[40px];
+      @apply mb-0 leading-[40px] text-black;
     }
   }
 

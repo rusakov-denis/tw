@@ -86,9 +86,7 @@
         </svg>
         <div class="text-center">
           <h2 class="m-0 text-5xl dark:text-white">TailwindCSS: Попутный ветер перемен</h2>
-          <p class="text-md mb-2 dark:text-white">
-            <i>Денис Русаков</i>
-          </p>
+          <p class="text-md mb-2 dark:text-white"></p>
         </div>
       </div>
       <footer>
@@ -209,7 +207,11 @@
     </section>
 
     <section class="slide">
-      <img class="cover w" src="./themes/tw/pictures/basics/stacks.jpg" alt="Стек" />
+      <img class="cover h-[450px]" src="./themes/tw/pictures/basics/popular.jpg" height="450" alt="Поплурность" />
+    </section>
+
+    <section class="slide">
+      <img class="cover h-[600px]" src="./themes/tw/pictures/basics/stacks.jpg" height="600" alt="Стек" />
       <footer>
         <p>
           Ничего не&nbsp;мешает использовать инструмент без фреймворков и&nbsp;с&nbsp;любой CMS. С&nbsp;тем&nbsp;же
@@ -284,7 +286,7 @@
       <h2>Синтаксис</h2>
       <div class="mt-20">
         <div class="next">
-          <p class="dark:text-[#fff]"><b>[class]</b></p>
+          <p><b>[class]</b></p>
           <ul>
             <li>flex</li>
             <li>text-white</li>
@@ -304,7 +306,7 @@
       <h2>Синтаксис</h2>
       <div class="columns two mt-20">
         <div>
-          <p class="dark:text-[#fff]"><b>[state][separator][class]</b></p>
+          <p><b>[state][separator][class]</b></p>
           <ul>
             <li>hover:bg-sky-700</li>
             <li>focus:bg-sky-700</li>
@@ -312,7 +314,7 @@
           </ul>
         </div>
         <div>
-          <p class="dark:text-[#fff]"><b>[screen][separator][class]</b></p>
+          <p><b>[screen][separator][class]</b></p>
           <ul>
             <li>sm:bg-sky-700</li>
             <li>md:bg-sky-700</li>
@@ -392,8 +394,7 @@
     </section>
 
     <section class="slide">
-      <img class="cover" src="./themes/tw/pictures/using/debug/gridman.jpg" alt="Gridman" />
-
+      <img class="cover h-[450px]" src="./themes/tw/pictures/using/debug/gridman.jpg" height="450" alt="Gridman" />
       <a
         class="copyright"
         href="https://chromewebstore.google.com/detail/gridman-%E2%80%94-%D0%BD%D0%B0%D0%B1%D0%BE%D1%80-%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD/cmplbmppmfboedgkkelpkfgaakabpicn"
@@ -1053,7 +1054,9 @@
         <li class="next">
           <a href="https://flowbite.com" target="_blank" rel="noopener noreferrer">Flowbite</a>
         </li>
-        <li class="next"><a href="https://merakiui.com" target="_blank" rel="noopener noreferrer">Meraki UI</a></li>
+        <li class="next">
+          <a href="https://merakiui.com" target="_blank" rel="noopener noreferrer">Meraki UI</a>
+        </li>
         <li class="next">
           <a href="https://nextui.org" target="_blank" rel="noopener noreferrer">Next UI</a>
         </li>
@@ -1074,34 +1077,6 @@
         <p>Сказать, что на&nbsp;Tailwind UI&nbsp;много платного и&nbsp;есть альтернативы</p>
       </footer>
     </section>
-
-    <section class="slide">
-      <h2>Расширения</h2>
-      <ul>
-        <li class="next">
-          <a href="https://www.jetbrains.com/help/phpstorm/tailwind-css.html" target="_blank" rel="noopener noreferrer"
-            >PHP Storm (из&nbsp;коробки)</a
-          >
-        </li>
-        <li class="next">
-          <a
-            href="https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss"
-            target="_blank"
-            rel="noopener noreferrer"
-            >VS&nbsp;Code</a
-          >
-        </li>
-      </ul>
-    </section>
-
-    <!-- <section class="slide">
-      <h2>CSS-in-JS <span class="text-2xl">(Vanilla Extract, Stylex и&nbsp;т.д.)</span></h2>
-      <ul>
-        <li class="next">предлагает возможность писать CSS внутри&nbsp;JS</li>
-        <li class="next">обеспечивает изоляцию стилей для компонентов</li>
-        <li class="next">позволяет использовать динамические стили</li>
-      </ul>
-    </section> -->
 
     <section class="slide">
       <img class="cover" src="./themes/tw/pictures/libs-and-plugins/prettier.jpg" alt="Prettier" />
@@ -1126,6 +1101,7 @@
         <li class="next">enforces-negative-arbitrary-values</li>
         <li class="next">enforces-shorthand</li>
       </ul>
+      <a class="copyright" href="" target="_blank" rel="noopener noreferrer">eslint-plugin-tailwindcss</a>
       <footer>
         <p>classnames-order&nbsp;&mdash; упорядочите имена классов</p>
         <p>
@@ -1250,6 +1226,34 @@
     </section>
 
     <section class="slide">
+      <h2>Расширения</h2>
+      <ul>
+        <li class="next">
+          <a href="https://www.jetbrains.com/help/phpstorm/tailwind-css.html" target="_blank" rel="noopener noreferrer"
+            >PHP Storm (из&nbsp;коробки)</a
+          >
+        </li>
+        <li class="next">
+          <a
+            href="https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss"
+            target="_blank"
+            rel="noopener noreferrer"
+            >VS&nbsp;Code</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <img
+        class="cover h-[170px]"
+        src="./themes/tw/pictures/libs-and-plugins/php-storm.jpg"
+        height="170"
+        alt="PHP Storm"
+      />
+    </section>
+
+    <section class="slide">
       <h2>Кто использует?</h2>
       <ul>
         <li class="next">Bitwarden</li>
@@ -1271,47 +1275,6 @@
       ></iframe>
       <footer>
         <p>Будущее уже здесь. Выходит плагин и&nbsp;уже в&nbsp;README описаны настройки и&nbsp;tailwind</p>
-      </footer>
-    </section>
-
-    <section class="slide">
-      <h2>Альтернативы (Deadушки)</h2>
-      <ul>
-        <li class="next">
-          <a href="#" target="_blank" rel="noopener noreferrer">Bootstrap</a>
-          <a class="next" href="https://www.youtube.com/watch?v=DRp4Ooe-aac" target="_blank" rel="noopener noreferrer"
-            >(&laquo;Тебе не&nbsp;нужен Bootstrap!&raquo;&nbsp;/ Шинкевич&nbsp;A.)</a
-          >
-        </li>
-        <li class="next">
-          <a href="https://bulma.io" target="_blank" rel="noopener noreferrer">Bulma</a>
-        </li>
-        <li class="next">
-          <a href="https://get.foundation" target="_blank" rel="noopener noreferrer">Foundation</a>
-        </li>
-        <li class="next">
-          <a href="https://mui.com" target="_blank" rel="noopener noreferrer">MUI</a>
-        </li>
-        <li class="next">
-          <a href="https://tachyons.io" target="_blank" rel="noopener noreferrer">Tachyons</a>
-        </li>
-        <li class="next">...</li>
-      </ul>
-      <footer>
-        <p>Многие UI&nbsp;фреймворки пишутся на&nbsp;Tailwind</p>
-      </footer>
-    </section>
-
-    <section class="slide">
-      <h2>Для чего всё это?</h2>
-      <p class="next">Мы&nbsp;хотим быстро и&nbsp;качественно...</p>
-      <ul>
-        <li class="next"><b>решать</b> задачи</li>
-        <li class="next"><b>научиться решать</b> задачи</li>
-        <li class="next"><b>научить решать</b> задачи</li>
-      </ul>
-      <footer>
-        <p>Прежде чем начнем говорить об&nbsp;инструменте, вспомним о&nbsp;задаче которую решаем.</p>
       </footer>
     </section>
 
@@ -1355,6 +1318,98 @@
     </section>
 
     <section class="slide">
+      <h2>Breaking news <span class="text-2xl">v4.0.0-alpha</span></h2>
+      <ul>
+        <li class="next">До&nbsp;10&nbsp;раз быстрее</li>
+        <li class="next">Меньше занимаемого места</li>
+        <li class="next">Пользовательский парсер</li>
+        <li class="next">Rust</li>
+        <li class="next">LightningCSS</li>
+        <li class="next">Встроенная @import обработка</li>
+        <li class="next">Встроенный префикс поставщика</li>
+      </ul>
+      <footer>
+        <p>
+          Еще рано, и&nbsp;нам предстоит много работы, но&nbsp;сегодня мы&nbsp;открываем исходный код нашего прогресса
+          и&nbsp;отмечаем первую общедоступную альфа-версию 4.0.0, чтобы вы&nbsp;могли начать с&nbsp;ней
+          экспериментировать и&nbsp;помочь нам выйти на&nbsp;стабильную версию. позже в&nbsp;этом году.
+        </p>
+        <p>
+          Новый движок&nbsp;&mdash; это переписанный с&nbsp;нуля, в&nbsp;нем используется все, что мы&nbsp;знаем
+          о&nbsp;фреймворке сейчас, чтобы лучше моделировать проблемное пространство, что ускоряет работу с&nbsp;гораздо
+          меньшим количеством кода.
+        </p>
+      </footer>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Альтернативы</h2>
+    </section>
+
+    <section class="slide">
+      <h2>Альтернативы</h2>
+      <ul>
+        <li class="next">
+          <a href="https://windicss.ru" target="_blank" rel="noopener noreferrer">WindiCSS</a>
+        </li>
+        <li class="next">
+          <a href="https://xstyled.dev" target="_blank" rel="noopener noreferrer">XStyled</a>
+        </li>
+        <li class="next">
+          <a href="https://tachyons.io" target="_blank" rel="noopener noreferrer">Tachyons</a>
+        </li>
+      </ul>
+      <footer>
+        <p>Многие UI&nbsp;фреймворки пишутся на&nbsp;Tailwind</p>
+      </footer>
+    </section>
+
+    <section class="slide relative">
+      <div class="absolute left-1/2 top-1/2 w-[1000px] -translate-x-1/2 -translate-y-1/2 text-center">
+        <h2>Tailwind + SASS</h2>
+        <p class="next mb-0 font-oswald text-6xl text-white">А&nbsp;зачем?</p>
+      </div>
+      <footer>
+        <p>
+          Самое важное, что нужно понимать при использовании Tailwind с&nbsp;препроцессором,&nbsp;&mdash; это&nbsp;то,
+          что препроцессоры, такие как SASS, Less и&nbsp;Stylus, запускаются отдельно до&nbsp;Tailwind. Это означает,
+          что вы&nbsp;не&nbsp;можете передавать выходные данные функции Tailwind, theme()например, в&nbsp;функцию цвета
+          SASS, потому что функция theme()фактически не&nbsp;оценивается до&nbsp;тех пор, пока ваш SASS не&nbsp;будет
+          скомпилирован в&nbsp;CSS и&nbsp;не&nbsp;передан в&nbsp;PostCSS.
+        </p>
+        <p>
+          Поскольку Tailwind&nbsp;&mdash; это плагин PostCSS, ничто не&nbsp;мешает вам использовать его с&nbsp;SASS,
+          точно так&nbsp;же, как вы&nbsp;можете использовать другие плагины PostCSS, такие как Autoprefixer .
+        </p>
+        <p>
+          С&nbsp;Tailwind у&nbsp;нас есть предопределенный набор стилей, тогда как с&nbsp;SASS у&nbsp;нас больше
+          контроля над отдельными компонентами
+        </p>
+        <p>
+          Tailwind фокусируется на&nbsp;служебных классах, а&nbsp;SASS предлагает большую гибоксть при написании
+          пользовательских стилей
+        </p>
+      </footer>
+    </section>
+
+    <section class="slide">
+      <img class="cover" src="./themes/tw/pictures/alternatives/sass/flex.svg" alt="Sass. Flex" />
+      <footer>
+        <p>
+          Flexbox настолько юзабельная штука, что сейчас от&nbsp;проекта к&nbsp;проекту приходится копировать классы
+          (мы&nbsp;создаем Tailwind?)
+        </p>
+      </footer>
+    </section>
+
+    <section class="slide">
+      <img class="cover" src="./themes/tw/pictures/alternatives/sass/mixins.svg" alt="Sass. Mixins" />
+      <footer>
+        <p>Теперь не&nbsp;нужны миксины и&nbsp;можем создавать свои utilities классы</p>
+      </footer>
+    </section>
+
+    <section class="slide">
       <h2 id="difference">Сравнение подходов</h2>
       <table aria-describedby="difference">
         <thead>
@@ -1383,123 +1438,78 @@
           </tr>
           <tr>
             <th scope="row">Better Tooling</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>✅</td>
+            <td>✅</td>
+            <td>✅</td>
+            <td>✅</td>
           </tr>
           <tr>
             <th scope="row">Runtime Overhead</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>❌</td>
+            <td>❌</td>
+            <td>✅</td>
+            <td>✅</td>
           </tr>
           <tr>
             <th scope="row">Dynamic Styles</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>✅</td>
+            <td>✅</td>
+            <td>❌</td>
+            <td>✅</td>
           </tr>
           <tr>
             <th scope="row">Performance Optimizations</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>✅</td>
+            <td>❌</td>
+            <td>✅</td>
+            <td>✅</td>
           </tr>
           <tr>
             <th scope="row">Learning Curve</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>✅</td>
+            <td>✅</td>
+            <td>✅</td>
+            <td>✅</td>
           </tr>
           <tr>
             <th scope="row">Debugging Complexity</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>✅</td>
+            <td>✅</td>
+            <td>✅</td>
+            <td>❌</td>
           </tr>
         </tbody>
       </table>
-      <p class="note">Меньше JS = более быстрый сайт</p>
-    </section>
-
-    <section class="slide relative">
-      <div class="absolute left-1/2 top-1/2 w-[1000px] -translate-x-1/2 -translate-y-1/2 text-center">
-        <h2>Tailwind + SASS</h2>
-        <p class="next mb-0 font-oswald text-6xl text-white">А&nbsp;зачем?</p>
-      </div>
-      <footer>
-        <p>
-          Самое важное, что нужно понимать при использовании Tailwind с&nbsp;препроцессором,&nbsp;&mdash; это&nbsp;то,
-          что препроцессоры, такие как Sass, Less и&nbsp;Stylus, запускаются отдельно до&nbsp;Tailwind. Это означает,
-          что вы&nbsp;не&nbsp;можете передавать выходные данные функции Tailwind, theme()например, в&nbsp;функцию цвета
-          Sass, потому что функция theme()фактически не&nbsp;оценивается до&nbsp;тех пор, пока ваш Sass не&nbsp;будет
-          скомпилирован в&nbsp;CSS и&nbsp;не&nbsp;передан в&nbsp;PostCSS.
-        </p>
-        <p>
-          Поскольку Tailwind&nbsp;&mdash; это плагин PostCSS, ничто не&nbsp;мешает вам использовать его с&nbsp;Sass,
-          точно так&nbsp;же, как вы&nbsp;можете использовать другие плагины PostCSS, такие как Autoprefixer .
-        </p>
-        <p>
-          С&nbsp;Tailwind у&nbsp;нас есть предопределенный набор стилей, тогда как с&nbsp;SASS у&nbsp;нас больше
-          контроля над отдельными компонентами
-        </p>
-        <p>
-          Tailwind фокусируется на&nbsp;служебных классах, а&nbsp;SASS предлагает большую гибоксть при написании
-          пользовательских стилей
-        </p>
-      </footer>
+      <p class="next note">Меньше JS = более быстрый сайт</p>
     </section>
 
     <section class="slide">
-      <img class="cover" src="./themes/tw/pictures/libs-and-plugins/sass/flex.svg" alt="Sass. Flex" />
-      <footer>
-        <p>
-          Flexbox настолько юзабельная штука, что сейчас от&nbsp;проекта к&nbsp;проекту приходится копировать классы
-          (мы&nbsp;создаем Tailwind?)
-        </p>
-      </footer>
-    </section>
-
-    <section class="slide">
-      <img class="cover" src="./themes/tw/pictures/libs-and-plugins/sass/mixins.svg" alt="Sass. Mixins" />
-      <footer>
-        <p>Теперь не&nbsp;нужны миксины и&nbsp;можем создавать свои utilities классы</p>
-      </footer>
-    </section>
-
-    <section class="slide">
-      <h2>Breaking news <span class="text-2xl">v4.0.0-alpha</span></h2>
+      <h2>Ещё подходы (Deadушки)</h2>
       <ul>
-        <li class="next">До&nbsp;10&nbsp;раз быстрее</li>
-        <li class="next">Меньше занимаемого места</li>
-        <li class="next">Пользовательский парсер</li>
-        <li class="next">Rust</li>
-        <li class="next">LightningCSS</li>
-        <li class="next">Встроенная @import обработка</li>
-        <li class="next">Встроенный префикс поставщика</li>
+        <li class="next">
+          <a href="https://getbootstrap.com" target="_blank" rel="noopener noreferrer">Bootstrap</a>
+          <a class="next" href="https://www.youtube.com/watch?v=DRp4Ooe-aac" target="_blank" rel="noopener noreferrer"
+            >(&laquo;Тебе не&nbsp;нужен Bootstrap!&raquo;&nbsp;/ Шинкевич&nbsp;A.)</a
+          >
+        </li>
+        <li class="next">
+          <a href="https://bulma.io" target="_blank" rel="noopener noreferrer">Bulma</a>
+        </li>
+        <li class="next">
+          <a href="https://get.foundation" target="_blank" rel="noopener noreferrer">Foundation</a>
+        </li>
+        <li class="next">
+          <a href="https://mui.com" target="_blank" rel="noopener noreferrer">MUI</a>
+        </li>
       </ul>
-      <footer>
-        <p>
-          Еще рано, и&nbsp;нам предстоит много работы, но&nbsp;сегодня мы&nbsp;открываем исходный код нашего прогресса
-          и&nbsp;отмечаем первую общедоступную альфа-версию 4.0.0, чтобы вы&nbsp;могли начать с&nbsp;ней
-          экспериментировать и&nbsp;помочь нам выйти на&nbsp;стабильную версию. позже в&nbsp;этом году.
-        </p>
-        <p>
-          Новый движок&nbsp;&mdash; это переписанный с&nbsp;нуля, в&nbsp;нем используется все, что мы&nbsp;знаем
-          о&nbsp;фреймворке сейчас, чтобы лучше моделировать проблемное пространство, что ускоряет работу с&nbsp;гораздо
-          меньшим количеством кода.
-        </p>
-      </footer>
     </section>
 
     <section class="slide">
-      <img class="cover" src="./themes/tw/pictures/nextjs-starter.jpg" alt="Next.js starter" />
+      <h2 class="shout">Когда можно использовать?</h2>
+    </section>
+
+    <section class="slide">
+      <img class="cover h-[400px]" src="./themes/tw/pictures/nextjs-starter.jpg" height="400" alt="Next.js starter" />
       <a class="copyright" href="https://github.com/webpractik/nextjs-starter">nextjs-starter</a>
     </section>
 
@@ -1510,6 +1520,19 @@
         <img class="next" src="./themes/tw/images/wp/wp-team.svg" width="250" height="250" alt="Wp logo" />
         <img class="next rounded-lg" src="./themes/tw/images/wp/cp.web.jpg" width="250" height="250" alt="Cp web" />
       </div>
+    </section>
+
+    <section class="slide">
+      <h2>Для чего всё это?</h2>
+      <p class="next">Мы&nbsp;хотим быстро и&nbsp;качественно...</p>
+      <ul>
+        <li class="next"><b>решать</b> задачи</li>
+        <li class="next"><b>научиться решать</b> задачи</li>
+        <li class="next"><b>научить решать</b> задачи</li>
+      </ul>
+      <footer>
+        <p>Прежде чем начнем говорить об&nbsp;инструменте, вспомним о&nbsp;задаче которую решаем.</p>
+      </footer>
     </section>
 
     <section class="slide">
