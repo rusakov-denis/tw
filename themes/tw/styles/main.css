@@ -74,7 +74,7 @@
       @apply text-white;
     }
 
-    h2 {
+    & > h2 {
       @apply font-oswald text-[72px];
     }
 
@@ -115,6 +115,10 @@
       td {
         @apply text-[20px];
       }
+    }
+
+    footer {
+      @apply pt-[30px];
     }
 
     footer > p {

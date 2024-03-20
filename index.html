@@ -19,7 +19,7 @@
 
     <section class="slide clear p-0">
       <div class="flex h-full flex-col items-center justify-end">
-        <svg width="171" height="96" fill="none" aria-hidden="true" class="mb-[140px] overflow-visible">
+        <svg width="171" height="96" fill="none" aria-hidden="true" class="mb-[100px] overflow-visible">
           <path
             fill="#fff"
             fill-opacity=".6"
@@ -85,8 +85,8 @@
           </defs>
         </svg>
         <div class="text-center">
-          <h2 class="m-0 text-5xl dark:text-white">TailwindCSS: Попутный ветер перемен</h2>
-          <p class="text-md mb-2 dark:text-white"></p>
+          <h2 class="!my-[20px] text-5xl">TailwindCSS: Попутный ветер перемен</h2>
+          <p class="text-md leading-6">Денис Русаков</p>
         </div>
       </div>
       <footer>
@@ -135,7 +135,7 @@
     </section>
 
     <section class="slide">
-      <img class="cover h" src="./themes/tw/pictures/basics/npm.jpg" alt="NPM" />
+      <img class="cover h-[550px]" src="./themes/tw/pictures/basics/npm.jpg" height="550" alt="NPM" />
       <footer>
         <p>Когда откуда-то узнаем о&nbsp;фреймворке/библиотеке идем на&nbsp;NPM, чтобы узнать подробнее</p>
         <p>
@@ -151,18 +151,33 @@
     </section>
 
     <section class="slide">
-      <img class="cover" src="./themes/tw/pictures/basics/definition/step-1.jpg" alt="Определение. Шаг 1" />
+      <img
+        class="cover h-[400px]"
+        src="./themes/tw/pictures/basics/definition/step-1.jpg"
+        height="400"
+        alt="Определение. Шаг 1"
+      />
       <footer>
         <p>Быстро создавайте современные веб-сайты, не&nbsp;выходя из&nbsp;HTML</p>
       </footer>
     </section>
 
     <section class="slide">
-      <img class="cover" src="./themes/tw/pictures/basics/definition/step-2.jpg" alt="Определение. Шаг 2" />
+      <img
+        class="cover h-[400px]"
+        src="./themes/tw/pictures/basics/definition/step-2.jpg"
+        height="400"
+        alt="Определение. Шаг 2"
+      />
     </section>
 
     <section class="slide">
-      <img class="cover" src="./themes/tw/pictures/basics/definition/step-3.jpg" alt="Определение. Шаг 3" />
+      <img
+        class="cover h-[400px]"
+        src="./themes/tw/pictures/basics/definition/step-3.jpg"
+        height="400"
+        alt="Определение. Шаг 3"
+      />
     </section>
 
     <section class="slide">
@@ -207,7 +222,7 @@
     </section>
 
     <section class="slide">
-      <img class="cover h-[450px]" src="./themes/tw/pictures/basics/popular.jpg" height="450" alt="Поплурность" />
+      <img class="cover h-[420px]" src="./themes/tw/pictures/basics/popular.jpg" height="420" alt="Популярность" />
     </section>
 
     <section class="slide">
@@ -261,20 +276,18 @@
       <footer>
         <p>Здесь остановимся подробнее</p>
         <p>Эти три директивы часто используются вместе</p>
-        <ul>
-          <li>
-            base&nbsp;&mdash; слой предназначен для таких вещей, как правила сброса/стили по&nbsp;умолчанию, применяемые
-            к&nbsp;простым элементам
-          </li>
-          <li>
-            components&nbsp;&mdash; слой предназначен для стилей на&nbsp;основе классов, которые вы&nbsp;хотите
-            переопределить с&nbsp;помощью утилит
-          </li>
-          <li>
-            utilities&nbsp;&mdash; уровень предназначен для небольших одноцелевых классов, которые всегда должны иметь
-            приоритет над любыми другими стилями
-          </li>
-        </ul>
+        <p>
+          base&nbsp;&mdash; слой предназначен для таких вещей, как правила сброса/стили по&nbsp;умолчанию, применяемые
+          к&nbsp;простым элементам
+        </p>
+        <p>
+          components&nbsp;&mdash; слой предназначен для стилей на&nbsp;основе классов, которые вы&nbsp;хотите
+          переопределить с&nbsp;помощью утилит
+        </p>
+        <p>
+          utilities&nbsp;&mdash; уровень предназначен для небольших одноцелевых классов, которые всегда должны иметь
+          приоритет над любыми другими стилями
+        </p>
       </footer>
     </section>
 
@@ -394,6 +407,18 @@
     </section>
 
     <section class="slide">
+      <img class="cover" src="./themes/tw/pictures/using/debug/tailwind-devtools.jpg" alt="Tailwind devtools" />
+      <a
+        class="copyright"
+        href="https://chromewebstore.google.com/detail/tailwind-css-devtools/pgamkpjkbfldnmemhcbekimfdnjcgkco"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Tailwind CSS Devtools
+      </a>
+    </section>
+
+    <section class="slide">
       <img class="cover h-[450px]" src="./themes/tw/pictures/using/debug/gridman.jpg" height="450" alt="Gridman" />
       <a
         class="copyright"
@@ -406,7 +431,12 @@
     </section>
 
     <section class="slide">
-      <img class="cover" src="./themes/tw/pictures/using/debug/gimli-tailwind.jpg" alt="Gimli tailwind" />
+      <img
+        class="cover h-[500px]"
+        src="./themes/tw/pictures/using/debug/gimli-tailwind.jpg"
+        height="500"
+        alt="Gimli tailwind"
+      />
       <a
         class="copyright"
         href="https://chromewebstore.google.com/detail/gimli-tailwind/fojckembkmaoehhmkiomebhkcengcljl"
@@ -485,9 +515,9 @@
       <h2>!important</h2>
       <img class="cover" src="./themes/tw/pictures/capabilites/important/variant-1.svg" alt="!important" />
       <p
-        class="next w-[285px] translate-x-[650px] translate-y-[100px] rotate-45 rounded-md bg-white px-2 py-1 text-4xl text-red"
+        class="next w-[285px] translate-x-[650px] translate-y-[100px] rotate-45 rounded-md bg-white px-2 py-1 text-4xl"
       >
-        <b>!important плохо</b>
+        <b class="text-red">!important плохо</b>
       </p>
       <footer>
         <p>
@@ -501,9 +531,9 @@
       <h2>!important</h2>
       <img class="cover" src="./themes/tw/pictures/capabilites/important/variant-2.svg" alt="!important" />
       <p
-        class="next w-[285px] translate-x-[650px] translate-y-[100px] rotate-45 rounded-md bg-white px-2 py-1 text-4xl text-red"
+        class="next w-[285px] translate-x-[650px] translate-y-[100px] rotate-45 rounded-md bg-white px-2 py-1 text-4xl"
       >
-        <b>!important плохо</b>
+        <b class="text-red">!important плохо</b>
       </p>
       <footer>
         <p>Т.к. important плохо, то&nbsp;у&nbsp;Tailwind есть отличное решение (на&nbsp;след. слайде)</p>
@@ -528,9 +558,8 @@
       <img class="cover mt-10" src="./themes/tw/pictures/capabilites/animations/settings.svg" alt="Анимации" />
     </section>
 
-    <section class="slide">
-      <h2>Анимации</h2>
-      <div class="flex h-[calc(100%_-_200px)] items-center justify-center">
+    <section class="slide relative">
+      <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
         <button
           type="button"
           class="text-md inline-flex cursor-not-allowed items-center rounded-md bg-white px-6 py-4 font-oswald leading-6 transition duration-150 ease-in-out dark:text-purple-dark"
@@ -634,6 +663,7 @@
     </section>
 
     <section class="slide">
+      <h2>Подключение плагинов</h2>
       <img class="cover" src="./themes/tw/pictures/libs-and-plugins/include.svg" alt="Подключение плагинов" />
       <footer>
         <p>О&nbsp;возможных плагинах поговорим позже</p>
@@ -726,19 +756,17 @@
       <img class="cover" src="./themes/tw/pictures/capabilites/functions/screen.svg" alt="Screen" />
     </section>
 
-    <section class="slide center">
-      <div class="mt-32">
-        <figure>
-          <blockquote>
-            <p>
-              В&nbsp;сочетании с&nbsp;минимизацией и&nbsp;сетевым сжатием это обычно приводит к&nbsp;созданию файлов CSS
-              размером менее 10&nbsp;КБ даже для больших проектов. Например, Netflix использует Tailwind для Netflix
-              Top&nbsp;10, а&nbsp;весь веб-сайт передает по&nbsp;сети только 6,5&nbsp;КБ CSS.
-            </p>
-          </blockquote>
-          <figcaption>Документация</figcaption>
-        </figure>
-      </div>
+    <section class="slide relative">
+      <figure class="absolute left-1/2 top-1/2 w-[800px] -translate-x-1/2 -translate-y-1/2">
+        <blockquote>
+          <p>
+            В&nbsp;сочетании с&nbsp;минимизацией и&nbsp;сетевым сжатием это обычно приводит к&nbsp;созданию файлов CSS
+            размером менее 10&nbsp;КБ даже для больших проектов. Например, Netflix использует Tailwind для Netflix
+            Top&nbsp;10, а&nbsp;весь веб-сайт передает по&nbsp;сети только 6,5&nbsp;КБ CSS.
+          </p>
+        </blockquote>
+        <figcaption>Документация</figcaption>
+      </figure>
     </section>
 
     <section class="slide">
@@ -764,8 +792,8 @@
       <h2 class="shout">Кейсы</h2>
     </section>
 
-    <section class="slide">
-      <figure class="mt-32">
+    <section class="slide relative">
+      <figure class="absolute left-1/2 top-1/2 w-[800px] -translate-x-1/2 -translate-y-1/2">
         <blockquote>
           <p>
             Наиболее повторно используемые компоненты&nbsp;&mdash; это&nbsp;те, имена классов которых не&nbsp;зависят
@@ -927,7 +955,7 @@
 
     <section class="slide">
       <h2>Прозрачность</h2>
-      <img class="cover mt-10" src="./themes/tw/pictures/cases/opacity.svg" alt="Прозрачность" />
+      <img class="cover" src="./themes/tw/pictures/cases/opacity.svg" alt="Прозрачность" />
     </section>
 
     <section class="slide">
@@ -1027,13 +1055,13 @@
 
     <section class="slide relative">
       <video
+        controls
+        muted
         preload="metadata"
         class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
-        controls
         controlslist="nodownload nofullscreen noremoteplayback"
-        muted
-        poster="./themes/tw/pictures//libs-and-plugins/catalyst.jpg"
-        width="600"
+        poster="./themes/tw/pictures/libs-and-plugins/shadcn/blank.jpg"
+        width="500"
       >
         <source src="./themes/tw/video/date-picker.webm" type="video/webm" />
       </video>
@@ -1190,6 +1218,29 @@
     </section>
 
     <section class="slide">
+      <img class="cover" src="./themes/tw/pictures/libs-and-plugins/figma-to-tailwind.jpg" alt="Figma to tailwind" />
+      <a
+        class="copyright"
+        href="https://www.figma.com/community/plugin/1292127575793104557/figma-to-tailwind-css"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        figma-to-tailwind
+      </a>
+    </section>
+
+    <section class="slide">
+      <img class="cover" src="./themes/tw/pictures/libs-and-plugins/tailwind-helper.jpg" alt="Tailwind helper" />
+      <a
+        class="copyright"
+        href="https://www.figma.com/community/plugin/1160460536051331955/tailwind-css-helper"
+        target="_blank"
+        rel="noopener noreferrer"
+        >tailwind-helper</a
+      >
+    </section>
+
+    <section class="slide">
       <h2>Ещё плагины</h2>
       <ul>
         <li class="next">
@@ -1245,6 +1296,7 @@
     </section>
 
     <section class="slide">
+      <h2>Подсветка в PHP Storm</h2>
       <img
         class="cover h-[170px]"
         src="./themes/tw/pictures/libs-and-plugins/php-storm.jpg"

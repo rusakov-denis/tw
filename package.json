@@ -23,7 +23,7 @@
     "@shower/cli": "^0.3.1",
     "autoprefixer": "^10.4.18",
     "path-exists-cli": "^2.0.0",
-    "postcss": "^8.4.36",
+    "postcss": "^8.4.37",
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.12",
     "sd-tailwindcss-transformer": "^1.4.1",
