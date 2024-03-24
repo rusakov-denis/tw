@@ -2,7 +2,6 @@ import type { Config } from 'tailwindcss';
 
 module.exports = {
   content: ['./index.html'],
-  darkMode: 'selector',
   theme: {
     screens: {
       fullWidth: '1920px',
@@ -15,14 +14,13 @@ module.exports = {
       minWidth: '320px',
     },
     colors: {
-      gray: '#808080',
+      gray: '#bfbfbf',
       white: '#fff',
       black: '#222',
       blue: '#38bdf8',
       red: '#ff0000',
       'pink-dark': '#2b213a',
       'purple-dark': '#0f172a',
-      'neon-cyan': 'oklch(91.3% 0.139 195.8)',
     },
     fontFamily: {
       oswald: 'Oswald, sans-serif',

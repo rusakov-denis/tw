@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="dark" lang="ru">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
@@ -9,9 +9,9 @@
     <meta name="description" content="Презентация по TailwindCSS" />
     <link rel="icon" href="./themes/tw/images/logo.svg" type="image/svg+xml" />
   </head>
-  <body class="shower list scrollbar dark:bg-purple-dark">
+  <body class="shower list scrollbar bg-purple-dark">
     <header class="caption">
-      <h1>TailwindCSS: Попутный ветер перемен.</h1>
+      <h1>TailwindCSS: Попутный ветер перемен</h1>
       <p>
         <i>Денис Русаков</i>
       </p>
@@ -86,13 +86,17 @@
         </svg>
         <div class="text-center">
           <h2 class="!my-[20px] text-5xl">TailwindCSS: Попутный ветер перемен</h2>
-          <p class="text-md leading-6">Денис Русаков</p>
+          <p class="text-md italic leading-6">
+            <i class="text-gray">Денис Русаков</i>
+          </p>
         </div>
       </div>
       <footer>
         <p>Кто слышал/использовал Tailwind?</p>
-        <p>Для тех кто первый раз слышит будет интересно</p>
-        <p>А&nbsp;для тех кто уже использовал, то&nbsp;постараюсь рассказать что-то новое</p>
+        <p>
+          Для тех кто первый раз слышит будет интересно, а&nbsp;для тех кто уже использовал, то&nbsp;постараюсь
+          рассказать что-то новое
+        </p>
       </footer>
     </section>
 
@@ -108,7 +112,7 @@
         <li class="next">Выводы</li>
       </ol>
       <img
-        class="float-right hidden w-[300px] -translate-y-[250px] rounded-lg group-has-[#cases.active_+_#libs:not(.active)]:block"
+        class="float-right hidden w-[300px] -translate-y-[250px] rounded-sm group-has-[#cases.active_+_#libs:not(.active)]:block"
         src="./themes/tw/images/memes/cat.jpg"
         width="300"
         alt="183"
@@ -123,10 +127,11 @@
         <li class="next">Необходимо писать темизацию</li>
         <li class="next">Импорт конфигов в&nbsp;каждом файле</li>
         <li class="next">Некоторые препроцессоры устарели</li>
+        <!-- #TODO: Дополнить -->
       </ul>
     </section>
 
-    <section class="slide">
+    <section class="slide clear">
       <h2 class="shout">Что ты&nbsp;такое <i>Tailwind</i> ?</h2>
       <img class="cover h" src="./themes/tw/images/memes/what.jpg" alt="Мем. Что ты такое" aria-hidden="true" />
       <footer>
@@ -135,7 +140,7 @@
     </section>
 
     <section class="slide">
-      <img class="cover h-[550px]" src="./themes/tw/pictures/basics/npm.jpg" height="550" alt="NPM" />
+      <img class="cover h-[530px] rounded-sm" src="./themes/tw/pictures/basics/npm.jpg" height="530" alt="NPM" />
       <footer>
         <p>Когда откуда-то узнаем о&nbsp;фреймворке/библиотеке идем на&nbsp;NPM, чтобы узнать подробнее</p>
         <p>
@@ -152,9 +157,9 @@
 
     <section class="slide">
       <img
-        class="cover h-[400px]"
+        class="cover h-[420px] rounded-sm"
         src="./themes/tw/pictures/basics/definition/step-1.jpg"
-        height="400"
+        height="420"
         alt="Определение. Шаг 1"
       />
       <footer>
@@ -164,24 +169,24 @@
 
     <section class="slide">
       <img
-        class="cover h-[400px]"
+        class="cover h-[420px] rounded-sm"
         src="./themes/tw/pictures/basics/definition/step-2.jpg"
-        height="400"
+        height="420"
         alt="Определение. Шаг 2"
       />
     </section>
 
     <section class="slide">
       <img
-        class="cover h-[400px]"
+        class="cover h-[420px] rounded-sm"
         src="./themes/tw/pictures/basics/definition/step-3.jpg"
-        height="400"
+        height="420"
         alt="Определение. Шаг 3"
       />
     </section>
 
-    <section class="slide">
-      <div class="mt-10">
+    <section class="slide relative">
+      <div class="absolute left-1/2 top-1/2 w-[800px] -translate-x-1/2 -translate-y-1/2">
         <figure>
           <blockquote>
             <p><b>TailwindCSS</b>&nbsp;&mdash; utility-first CSS framework...</p>
@@ -218,15 +223,20 @@
     </section>
 
     <section class="slide">
-      <img class="cover" src="./themes/tw/pictures/basics/issues.jpg" alt="Issues" />
+      <img class="cover h-[250px] rounded-sm" height="250" src="./themes/tw/pictures/basics/issues.jpg" alt="Issues" />
     </section>
 
     <section class="slide">
-      <img class="cover h-[420px]" src="./themes/tw/pictures/basics/popular.jpg" height="420" alt="Популярность" />
+      <img
+        class="cover h-[420px] rounded-sm"
+        src="./themes/tw/pictures/basics/popular.jpg"
+        height="420"
+        alt="Популярность"
+      />
     </section>
 
     <section class="slide">
-      <img class="cover h-[600px]" src="./themes/tw/pictures/basics/stacks.jpg" height="600" alt="Стек" />
+      <img class="cover h-[600px] rounded-sm" src="./themes/tw/pictures/basics/stacks.jpg" height="600" alt="Стек" />
       <footer>
         <p>
           Ничего не&nbsp;мешает использовать инструмент без фреймворков и&nbsp;с&nbsp;любой CMS. С&nbsp;тем&nbsp;же
@@ -241,7 +251,7 @@
       </footer>
     </section>
 
-    <section class="slide bg">
+    <section class="slide bg clear">
       <h2 class="shout">Использование инструмента</h2>
       <footer>
         <p>Всё это конечно прекрасно, а&nbsp;как пользоваться</p>
@@ -267,7 +277,7 @@
       <h2>Шаг 3</h2>
       <img class="cover" src="./themes/tw/pictures/using/install/step-3.svg" alt="Установка. Шаг 3" />
       <img
-        class="next float-right w-[400px] translate-x-[50px] translate-y-[50px] rounded-md"
+        class="next float-right w-[400px] translate-x-[50px] translate-y-[50px] rounded-sm"
         src="./themes/tw/images/memes/three.jpg"
         width="400"
         height="400"
@@ -365,6 +375,7 @@
       <img class="cover" src="./themes/tw/pictures/using/styles.svg" alt="Стили" />
       <footer>
         <p>JIT&nbsp;&mdash; Just In&nbsp;Time</p>
+        <p>Больше не&nbsp;задумываемся как сократить размер стилей</p>
         <p>
           Мы&nbsp;можем предотвратить любую головную боль и&nbsp;решить любые проблемы (по&nbsp;большей части), если
           правильно и&nbsp;разумно использовать Tailwind. Но&nbsp;есть два требования, которым должен соответствовать
@@ -407,7 +418,11 @@
     </section>
 
     <section class="slide">
-      <img class="cover" src="./themes/tw/pictures/using/debug/tailwind-devtools.jpg" alt="Tailwind devtools" />
+      <img
+        class="cover rounded-sm"
+        src="./themes/tw/pictures/using/debug/tailwind-devtools.jpg"
+        alt="Tailwind devtools"
+      />
       <a
         class="copyright"
         href="https://chromewebstore.google.com/detail/tailwind-css-devtools/pgamkpjkbfldnmemhcbekimfdnjcgkco"
@@ -419,7 +434,7 @@
     </section>
 
     <section class="slide">
-      <img class="cover h-[450px]" src="./themes/tw/pictures/using/debug/gridman.jpg" height="450" alt="Gridman" />
+      <img class="cover" src="./themes/tw/pictures/using/debug/gridman.jpg" alt="Gridman" />
       <a
         class="copyright"
         href="https://chromewebstore.google.com/detail/gridman-%E2%80%94-%D0%BD%D0%B0%D0%B1%D0%BE%D1%80-%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD/cmplbmppmfboedgkkelpkfgaakabpicn"
@@ -432,7 +447,7 @@
 
     <section class="slide">
       <img
-        class="cover h-[500px]"
+        class="cover h-[500px] rounded-sm"
         src="./themes/tw/pictures/using/debug/gimli-tailwind.jpg"
         height="500"
         alt="Gimli tailwind"
@@ -447,7 +462,7 @@
       </footer>
     </section>
 
-    <section class="slide bg">
+    <section class="slide bg clear">
       <h2 class="shout">Возможности</h2>
     </section>
 
@@ -471,17 +486,17 @@
     </section>
 
     <section class="slide">
+      <h2>Цвета</h2>
+      <img class="cover mt-10" src="./themes/tw/pictures/capabilites/colors.svg" alt="Цвета" />
+    </section>
+
+    <section class="slide">
       <h2>Тёмная тема</h2>
       <img class="cover" src="./themes/tw/pictures/capabilites/dark-mode/settings.svg" alt="Тёмная тема" />
     </section>
 
     <section class="slide">
       <img class="cover" src="./themes/tw/pictures/capabilites/dark-mode/using.svg" alt="Тёмной тема" />
-    </section>
-
-    <section class="slide">
-      <h2>Цвета</h2>
-      <img class="cover mt-10" src="./themes/tw/pictures/capabilites/colors.svg" alt="Цвета" />
     </section>
 
     <section class="slide">
@@ -515,7 +530,7 @@
       <h2>!important</h2>
       <img class="cover" src="./themes/tw/pictures/capabilites/important/variant-1.svg" alt="!important" />
       <p
-        class="next w-[285px] translate-x-[650px] translate-y-[100px] rotate-45 rounded-md bg-white px-2 py-1 text-4xl"
+        class="next w-[285px] translate-x-[650px] translate-y-[100px] rotate-45 rounded-sm bg-white px-2 py-1 text-4xl"
       >
         <b class="text-red">!important плохо</b>
       </p>
@@ -531,7 +546,7 @@
       <h2>!important</h2>
       <img class="cover" src="./themes/tw/pictures/capabilites/important/variant-2.svg" alt="!important" />
       <p
-        class="next w-[285px] translate-x-[650px] translate-y-[100px] rotate-45 rounded-md bg-white px-2 py-1 text-4xl"
+        class="next w-[285px] translate-x-[650px] translate-y-[100px] rotate-45 rounded-sm bg-white px-2 py-1 text-4xl"
       >
         <b class="text-red">!important плохо</b>
       </p>
@@ -562,7 +577,7 @@
       <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
         <button
           type="button"
-          class="text-md inline-flex cursor-not-allowed items-center rounded-md bg-white px-6 py-4 font-oswald leading-6 transition duration-150 ease-in-out dark:text-purple-dark"
+          class="text-md inline-flex cursor-not-allowed items-center rounded-sm bg-white px-6 py-4 font-oswald leading-6 text-purple-dark transition duration-150 ease-in-out"
           disabled
         >
           <svg class="-ml-1 mr-3 h-5 w-5 animate-spin" fill="none" viewBox="0 0 24 24">
@@ -788,7 +803,7 @@
       <img class="cover" src="./themes/tw/pictures/capabilites/cssnano.svg" alt="CSSNano" />
     </section>
 
-    <section class="slide bg">
+    <section class="slide bg clear">
       <h2 class="shout">Кейсы</h2>
     </section>
 
@@ -944,7 +959,7 @@
       <h2>Отступы</h2>
       <img class="cover" src="./themes/tw/pictures/cases/spacing/step-2.svg" alt="Отступы. Шаг 2" />
       <img
-        class="float-right w-[300px] translate-y-[100px] rounded-lg"
+        class="float-right w-[300px] translate-y-[100px] rounded-sm"
         src="./themes/tw/images/memes/space-x.jpg"
         alt=""
         width="300"
@@ -997,13 +1012,13 @@
         <input
           type="email"
           name="email"
-          class="placeholder-slate-400 sm:text-sm mt-1 block rounded-md border border-none bg-white px-2 py-1"
+          class="placeholder-slate-400 sm:text-sm mt-1 block rounded-sm border border-none bg-white px-2 py-1"
           placeholder="work@webpractik.ru"
         />
       </label>
     </section>
 
-    <section class="slide bg">
+    <section class="slide bg clear">
       <h2 class="shout">Библиотеки и&nbsp;плагины</h2>
     </section>
 
@@ -1017,7 +1032,12 @@
     </section>
 
     <section class="slide">
-      <img class="cover" src="./themes/tw/pictures/libs-and-plugins/ui/source.jpg" alt="Tailwind UI. Source" />
+      <img
+        class="cover h-[250px]"
+        src="./themes/tw/pictures/libs-and-plugins/ui/source.jpg"
+        alt="Tailwind UI. Source"
+        height="250"
+      />
       <footer>
         <p>Можно конечно вытащить исходники, но...</p>
       </footer>
@@ -1058,7 +1078,7 @@
         controls
         muted
         preload="metadata"
-        class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+        class="absolute left-1/2 top-1/2 h-[500px] w-[400px] -translate-x-1/2 -translate-y-1/2 object-cover"
         controlslist="nodownload nofullscreen noremoteplayback"
         poster="./themes/tw/pictures/libs-and-plugins/shadcn/blank.jpg"
         width="500"
@@ -1296,9 +1316,9 @@
     </section>
 
     <section class="slide">
-      <h2>Подсветка в PHP Storm</h2>
+      <h2>Подсветка в&nbsp;PHP Storm</h2>
       <img
-        class="cover h-[170px]"
+        class="cover h-[170px] rounded-sm"
         src="./themes/tw/pictures/libs-and-plugins/php-storm.jpg"
         height="170"
         alt="PHP Storm"
@@ -1319,15 +1339,33 @@
 
     <section class="slide clear relative">
       <iframe
-        class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+        id="input-otp-iframe"
+        class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-sm"
         title="input otp"
-        width="90%"
-        height="90%"
-        src="https://input-otp.rodz.dev"
+        width="95%"
+        height="95%"
       ></iframe>
+      <button
+        class="absolute relative left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-sm bg-blue px-4 text-white"
+        type="button"
+        id="upload-iframe"
+      >
+        Нажми меня
+      </button>
       <footer>
         <p>Будущее уже здесь. Выходит плагин и&nbsp;уже в&nbsp;README описаны настройки и&nbsp;tailwind</p>
       </footer>
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const uploadIframe = document.querySelector('#upload-iframe');
+          const inputOtpIframe = document.querySelector('#input-otp-iframe');
+
+          uploadIframe.addEventListener('click', function () {
+            inputOtpIframe.src = 'https://input-otp.rodz.dev';
+            inputOtpIframe.classList.add('z-10');
+          });
+        });
+      </script>
     </section>
 
     <section class="slide">
@@ -1394,7 +1432,7 @@
       </footer>
     </section>
 
-    <section class="slide">
+    <section class="slide clear">
       <h2 class="shout">Альтернативы</h2>
     </section>
 
@@ -1476,59 +1514,59 @@
         <tbody>
           <tr>
             <th scope="row">Size Bundle</th>
-            <td>✅</td>
-            <td>❌</td>
-            <td>✅</td>
-            <td>🔥</td>
+            <td>&#9989;</td>
+            <td>&#10060;</td>
+            <td>&#9989;</td>
+            <td>&#128640;</td>
           </tr>
           <tr>
             <th scope="row">Scoped Styles</th>
-            <td>✅</td>
-            <td>✅</td>
-            <td>❌</td>
-            <td>✅</td>
+            <td>&#9989;</td>
+            <td>&#9989;</td>
+            <td>&#10060;</td>
+            <td>&#9989;</td>
           </tr>
           <tr>
             <th scope="row">Better Tooling</th>
-            <td>✅</td>
-            <td>✅</td>
-            <td>✅</td>
-            <td>✅</td>
+            <td>&#9989;</td>
+            <td>&#9989;</td>
+            <td>&#9989;</td>
+            <td>&#9989;</td>
           </tr>
           <tr>
             <th scope="row">Runtime Overhead</th>
-            <td>❌</td>
-            <td>❌</td>
-            <td>✅</td>
-            <td>✅</td>
+            <td>&#10060;</td>
+            <td>&#10060;</td>
+            <td>&#9989;</td>
+            <td>&#9989;</td>
           </tr>
           <tr>
             <th scope="row">Dynamic Styles</th>
-            <td>✅</td>
-            <td>✅</td>
-            <td>❌</td>
-            <td>✅</td>
+            <td>&#9989;</td>
+            <td>&#9989;</td>
+            <td>&#10060;</td>
+            <td>&#9989;</td>
           </tr>
           <tr>
             <th scope="row">Performance Optimizations</th>
-            <td>✅</td>
-            <td>❌</td>
-            <td>✅</td>
-            <td>✅</td>
+            <td>&#9989;</td>
+            <td>&#10060;</td>
+            <td>&#9989;</td>
+            <td>&#9989;</td>
           </tr>
           <tr>
             <th scope="row">Learning Curve</th>
-            <td>✅</td>
-            <td>✅</td>
-            <td>✅</td>
-            <td>✅</td>
+            <td>&#9989;</td>
+            <td>&#9989;</td>
+            <td>&#9989;</td>
+            <td>&#9989;</td>
           </tr>
           <tr>
             <th scope="row">Debugging Complexity</th>
-            <td>✅</td>
-            <td>✅</td>
-            <td>✅</td>
-            <td>❌</td>
+            <td>&#9989;</td>
+            <td>&#9989;</td>
+            <td>&#9989;</td>
+            <td>&#10060;</td>
           </tr>
         </tbody>
       </table>
@@ -1570,7 +1608,7 @@
       <div class="absolute left-1/2 top-1/2 flex w-[90%] -translate-x-1/2 -translate-y-1/2 justify-between">
         <img class="next" src="./themes/tw/images/wp/logo.svg" width="250" height="250" alt="Wp team" />
         <img class="next" src="./themes/tw/images/wp/wp-team.svg" width="250" height="250" alt="Wp logo" />
-        <img class="next rounded-lg" src="./themes/tw/images/wp/cp.web.jpg" width="250" height="250" alt="Cp web" />
+        <img class="next rounded-sm" src="./themes/tw/images/wp/cp.web.jpg" width="250" height="250" alt="Cp web" />
       </div>
     </section>
 

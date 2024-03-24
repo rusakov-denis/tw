@@ -28,7 +28,7 @@
       @apply bg-pink-dark;
 
       .slide {
-        @apply rounded-md;
+        @apply rounded-sm;
 
         footer {
           @apply translate-y-[calc(100%_+_1px)];
@@ -133,7 +133,7 @@
 
     &::-webkit-scrollbar-track,
     &::-webkit-scrollbar-thumb {
-      @apply rounded-md;
+      @apply rounded-sm;
     }
 
     &::-webkit-scrollbar-track {
@@ -157,7 +157,7 @@
 
 @layer utilities {
   .bg {
-    @apply bg-[url('../themes/tw/pictures/bg.png')] bg-cover bg-center bg-no-repeat;
+    @apply bg-[url('../themes/tw/images/bg.png')] bg-cover bg-center bg-no-repeat;
   }
 
   .animate-color-fly-logo {
