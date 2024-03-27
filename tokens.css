@@ -1,0 +1,55 @@
+/**
+ * Do not edit directly
+ * Generated on Mon, 18 Mar 2024 08:25:08 GMT
+ */
+
+:root {
+  --color-brand-purple: #ee375c;
+  --color-brand-dark: #112d3f;
+  --color-button-primary: #364153;
+  --color-button-primary-hover: #4a5567;
+  --color-button-primary-pressed: #20293a;
+  --color-button-primary-disabled: #cdd5e0;
+  --color-button-focused: #4bd4ff;
+  --color-button-white: #ffffff;
+  --color-button-error: #f55b5b;
+  --color-button-error-light: #ff8484;
+  --color-gray-50: #f8fafc;
+  --color-gray-100: #f2f5f9;
+  --color-gray-200: #e3e8ef;
+  --color-gray-300: #cdd5e0;
+  --color-gray-400: #97a3b6;
+  --color-gray-500: #677489;
+  --color-gray-600: #4a5567;
+  --color-gray-700: #364153;
+  --color-gray-800: #20293a;
+  --color-gray-900: #111729;
+  --color-icon-warning: #ff9b26;
+  --color-icon-primary: #364153;
+  --color-icon-hover: #677489;
+  --color-icon-white: #ffffff;
+  --color-icon-success: #95d463;
+  --color-icon-error: #f55b5b;
+  --color-icon-background: #e3e8ef;
+  --color-icon-neutral: #97a3b6;
+  --color-icon-link: #35a4eb;
+  --color-icon-link-hover: #53d6ff;
+  --color-text-white: #ffffff;
+  --color-text-secondary: #8ea1ad;
+  --color-text-primary: #20293a;
+  --color-text-link: #35a4eb;
+  --color-text-link-hover: #53d6ff;
+  --color-text-success: #95d463;
+  --color-text-success-light: #adf178;
+  --color-text-error: #f55b5b;
+  --color-text-error-light: #ff8484;
+  --color-support-white: #ffffff;
+  --color-support-dark: #20293a;
+  --color-support-error: #f55b5b;
+  --color-support-error-light: #ffc8c8;
+  --color-support-success: #95d463;
+  --color-support-success-light: #b3e78a;
+  --color-support-warning: #ff9b26;
+  --color-support-info: #35a4eb;
+  --color-support-info-light: #4bd4ff;
+}

@@ -29,10 +29,6 @@
 
       .slide {
         @apply rounded-sm;
-
-        footer {
-          @apply translate-y-[calc(100%_+_1px)];
-        }
       }
     }
 
@@ -43,6 +39,16 @@
     h1 {
       @apply text-white;
       @apply font-oswald;
+    }
+  }
+
+  .shower.list {
+    @apply bg-pink-dark;
+
+    .slide {
+      footer {
+        @apply translate-y-[calc(100%_+_1px)];
+      }
     }
   }
 
