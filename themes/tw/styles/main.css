@@ -37,18 +37,7 @@
     }
 
     h1 {
-      @apply text-white;
-      @apply font-oswald;
-    }
-  }
-
-  .shower.list {
-    @apply bg-pink-dark;
-
-    .slide {
-      footer {
-        @apply translate-y-[calc(100%_+_1px)];
-      }
+      @apply font-oswald text-white;
     }
   }
 
@@ -121,14 +110,6 @@
       td {
         @apply text-[20px];
       }
-    }
-
-    footer {
-      @apply pt-[30px];
-    }
-
-    footer > p {
-      @apply mb-0 leading-[40px] text-black;
     }
   }
 

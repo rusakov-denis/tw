@@ -91,15 +91,6 @@
           </p>
         </div>
       </div>
-      <footer>
-        <p>Подготовил доклад на тему Tailwind: Попутный ветер перемен</p>
-        <p>Почему именно этот инструмент и зачем его использовать расскажу в этом докладе</p>
-        <p>Завести разговор - Кто слышал/использовал Tailwind?</p>
-        <p>
-          Для тех кто первый раз слышит будет интересно, а&nbsp;для тех кто уже использовал, то&nbsp;постараюсь
-          рассказать что-то новое
-        </p>
-      </footer>
     </section>
 
     <section class="slide group">
@@ -126,31 +117,20 @@
       <h2>Проблемы сейчас</h2>
       <ul>
         <li class="next">Большое кол-во дублей в&nbsp;сборке</li>
-        <li class="next">Необходимо писать темизацию</li>
         <li class="next">Импорт конфигов в&nbsp;каждом файле</li>
         <li class="next">Некоторые препроцессоры устарели</li>
+        <li class="next">Повторяющиеся обертки-компоненты (Box, Flex, Grid, AspectRatio и&nbsp;т.д.)</li>
+        <li class="next">Необходимо писать темизацию</li>
       </ul>
-      <footer>
-        <p>Из-за дублей большой бандл - проседает оптимизация</p>
-        <p>От проекта к проекту пишем темизацию</p>
-        <p>Импорт конфигов решается на уровне фреймворков, но все же проблема встречается</p>
-        <p>Устаревание инструментов, таких как sass</p>
-      </footer>
     </section>
 
     <section class="slide clear">
       <h2 class="shout">Что ты&nbsp;такое <i>Tailwind</i> ?</h2>
       <img class="cover h" src="./themes/tw/images/memes/what.jpg" alt="Мем. Что ты такое" aria-hidden="true" />
-      <footer>
-        <p>Tailwind&nbsp;&mdash; lodash в&nbsp;мире CSS</p>
-      </footer>
     </section>
 
     <section class="slide">
       <img class="cover h-[530px] rounded-sm" src="./themes/tw/pictures/basics/npm.jpg" height="530" alt="NPM" />
-      <footer>
-        <p>Когда откуда-то узнаем о&nbsp;фреймворке/библиотеке идем на&nbsp;NPM, чтобы узнать подробнее</p>
-      </footer>
     </section>
 
     <section class="slide">
@@ -160,9 +140,6 @@
         height="420"
         alt="Определение. Шаг 1"
       />
-      <footer>
-        <p>Быстро создавайте современные веб-сайты, не&nbsp;выходя из&nbsp;HTML</p>
-      </footer>
     </section>
 
     <section class="slide">
@@ -172,10 +149,6 @@
         height="420"
         alt="Определение. Шаг 2"
       />
-      <footer>
-        <p>Завести разговор</p>
-        <p>Вопрос не по теме - кто знает что такое satisfies</p>
-      </footer>
     </section>
 
     <section class="slide">
@@ -185,13 +158,6 @@
         height="420"
         alt="Определение. Шаг 3"
       />
-      <footer>
-        <p>
-          Tailwind работает путем сканирования всех ваших файлов на&nbsp;предмет имен классов, создаёт соответствующих
-          стилей и&nbsp;последующей записи их&nbsp;в&nbsp;статический файл CSS. Это быстро, гибко
-          и&nbsp;надежно&nbsp;&mdash; с&nbsp;нулевым временем выполнения.
-        </p>
-      </footer>
     </section>
 
     <section class="slide relative">
@@ -221,21 +187,10 @@
           <figcaption>Документация</figcaption>
         </figure>
       </div>
-      <footer>
-        <p>
-          Основное преимущество Tailwind заключается в&nbsp;том, что он&nbsp;предоставляет большой набор готовых
-          классов. Это значительно сокращает время на&nbsp;создание пользовательского интерфейса,
-          т.к.&nbsp;не&nbsp;нужно писать каждый раз новые стили для каждого элемента. Кроме того, использование готовых
-          классов позволяет легко и&nbsp;быстро изменять внешний вид элементов, не&nbsp;затрагивая их&nbsp;структуру.
-        </p>
-      </footer>
     </section>
 
     <section class="slide">
       <img class="cover h-[250px] rounded-sm" height="250" src="./themes/tw/pictures/basics/issues.jpg" alt="Issues" />
-      <footer>
-        <p>С 2017 решили более 3120 проблем</p>
-      </footer>
     </section>
 
     <section class="slide">
@@ -250,47 +205,21 @@
         target="_blank"
         rel="noopener noreferrer"
         class="copyright"
-        >State of CSS</a
+        >State of&nbsp;CSS</a
       >
-      <footer>
-        <p>
-          Работать с&nbsp;Tailwind довольно быстро и&nbsp;легко (именно поэтому он&nbsp;получил такое широкое
-          признание).
-        </p>
-      </footer>
     </section>
 
     <section class="slide">
       <img class="cover h-[600px] rounded-sm" src="./themes/tw/pictures/basics/stacks.jpg" height="600" alt="Стек" />
-      <footer>
-        <p>
-          Ничего не&nbsp;мешает использовать инструмент без фреймворков и&nbsp;с&nbsp;любой CMS. С&nbsp;тем&nbsp;же
-          Bitrix&rsquo;ом, с&nbsp;которым мы&nbsp;сталкиваемся чаще всего.
-        </p>
-        <p>
-          Во-первых, в&nbsp;нашем проекте должна быть дизайн-система. Философия Tailwind сочетается с&nbsp;системой
-          дизайна, в&nbsp;которой дизайнеры и&nbsp;разработчики используют единые дизайнерские токены. Токены
-          дизайна&nbsp;&mdash; это атомарные значения (например, цвета, интервалы или типографские масштабы), которые
-          определяют свойства дизайна и&nbsp;повторно используются на&nbsp;протяжении всего проекта.
-        </p>
-      </footer>
     </section>
 
     <section class="slide bg clear">
       <h2 class="shout">Использование инструмента</h2>
-      <footer>
-        <p>Всё это конечно прекрасно, а&nbsp;как пользоваться</p>
-        <p>Установка в&nbsp;3&nbsp;шага</p>
-      </footer>
     </section>
 
     <section class="slide">
       <h2>Шаг 1</h2>
       <img class="cover" src="./themes/tw/pictures/using/install/step-1.svg" alt="Установка. Шаг 1" />
-      <footer>
-        <p>Начнём с&nbsp;установки</p>
-        <p>Также устанавливаем postcss и&nbsp;autoprefixer&nbsp;&mdash; они нам понадобятся позже</p>
-      </footer>
     </section>
 
     <section class="slide">
@@ -308,22 +237,6 @@
         height="400"
         alt="Мем. Вы всегда втроём"
       />
-      <footer>
-        <p>Здесь остановимся подробнее</p>
-        <p>Эти три директивы часто используются вместе</p>
-        <p>
-          base&nbsp;&mdash; слой предназначен для таких вещей, как правила сброса/стили по&nbsp;умолчанию, применяемые
-          к&nbsp;простым элементам
-        </p>
-        <p>
-          components&nbsp;&mdash; слой предназначен для стилей на&nbsp;основе классов, которые вы&nbsp;хотите
-          переопределить с&nbsp;помощью утилит
-        </p>
-        <p>
-          utilities&nbsp;&mdash; уровень предназначен для небольших одноцелевых классов, которые всегда должны иметь
-          приоритет над любыми другими стилями
-        </p>
-      </footer>
     </section>
 
     <section class="slide">
@@ -342,12 +255,6 @@
           </ul>
         </div>
       </div>
-      <footer>
-        <p>
-          Синтаксис Tailwind очень простой: к&nbsp;элементам HTML/JSX добавляются имена классов, которые представляют
-          одно/несколько объявлений CSS.
-        </p>
-      </footer>
     </section>
 
     <section class="slide">
@@ -370,73 +277,26 @@
           </ul>
         </div>
       </div>
-      <footer>
-        <p>
-          Tailwind не&nbsp;ограничивает&nbsp;&mdash; вы&nbsp;можете использовать псевдоклассы/псевдоэлементы/селекторы
-          атрибутов. Вы&nbsp;также можете комбинировать
-        </p>
-      </footer>
     </section>
 
     <section class="slide">
       <h2>Разметка</h2>
       <img class="cover" src="./themes/tw/pictures/using/layout.svg" alt="Пример использования инструмента" />
-      <footer>
-        <p>
-          Стили можно понять сразу, поскольку они читаются одновременно с&nbsp;просмотром компонента.
-          Не&nbsp;обязательно перепрыгивать на&nbsp;файл стилей/делать разделение экрана
-        </p>
-        <p>
-          С&nbsp;использования Tailwind написание CSS, который не&nbsp;растет линейно. Наличие имен служебных классов,
-          которые будут общими для всех элементов, гарантирует согласованный размер пакета. Кроме того, Tailwind
-          в&nbsp;сочетании с&nbsp;PurgeCSS удалит все неиспользуемые стили, поэтому кодовая база не&nbsp;будет
-          перегружена дополнительными классами.
-        </p>
-      </footer>
     </section>
 
     <section class="slide">
       <h2>Стили</h2>
       <img class="cover" src="./themes/tw/pictures/using/styles.svg" alt="Стили" />
-      <footer>
-        <p>JIT&nbsp;&mdash; Just In&nbsp;Time</p>
-        <p>Больше не&nbsp;задумываемся как сократить размер стилей</p>
-        <p>
-          Мы&nbsp;можем предотвратить любую головную боль и&nbsp;решить любые проблемы (по&nbsp;большей части), если
-          правильно и&nbsp;разумно использовать Tailwind. Но&nbsp;есть два требования, которым должен соответствовать
-          наш проект, и&nbsp;если он&nbsp;не&nbsp;соответствуют, Tailwind вместо этого может очень усложнить нашу
-          работу.
-        </p>
-        <p>
-          Если вы&nbsp;сообщите об&nbsp;этом явно, вам будет легче понять, как ваши стили будут взаимодействовать друг
-          с&nbsp;другом, а&nbsp;использование директивы @layer позволит вам контролировать окончательный порядок
-          объявления, при этом организуя ваш фактический код так, как вам нравится.
-        </p>
-      </footer>
     </section>
 
     <section class="slide">
-      <h2>Класс "зомби"</h2>
+      <h2>Класс &laquo;зомби&raquo;</h2>
       <img class="cover" src="./themes/tw/pictures/using/class-without-a-case.svg" alt="Неиспользуемый класс" />
-      <footer>
-        <p>
-          Любые пользовательские стили, которые вы&nbsp;добавляете к&nbsp;слоям base, components или utilities слоям,
-          будут включены в&nbsp;скомпилированный CSS только в&nbsp;том случае, если эти стили действительно используются
-          в&nbsp;вашем HTML.
-        </p>
-        <p>С&nbsp;Tailwind не&nbsp;будет создание классов, которые не&nbsp;используются</p>
-      </footer>
     </section>
 
     <section class="slide">
       <h2>Большое кол-во классов</h2>
       <img class="cover" src="./themes/tw/pictures/using/many-classes.svg" alt="Большое кол-во классов" />
-      <footer>
-        <p>Портянка из&nbsp;классов</p>
-        <p>Tailwind это не&nbsp;панацея. Не&nbsp;существует одной правильной системы</p>
-        <p>Повод задуматься, что нужно декомпозировать компонент</p>
-        <p>А&nbsp;как дебажить это всё?</p>
-      </footer>
     </section>
 
     <section class="slide">
@@ -460,18 +320,6 @@
     </section>
 
     <section class="slide">
-      <img class="cover" src="./themes/tw/pictures/using/debug/gridman.jpg" alt="Gridman" />
-      <a
-        class="copyright"
-        href="https://chromewebstore.google.com/detail/gridman-%E2%80%94-%D0%BD%D0%B0%D0%B1%D0%BE%D1%80-%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD/cmplbmppmfboedgkkelpkfgaakabpicn"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        gridman
-      </a>
-    </section>
-
-    <section class="slide">
       <img
         class="cover h-[500px] rounded-sm"
         src="./themes/tw/pictures/using/debug/gimli-tailwind.jpg"
@@ -483,9 +331,6 @@
         href="https://chromewebstore.google.com/detail/gimli-tailwind/fojckembkmaoehhmkiomebhkcengcljl"
         >gimli-tailwind</a
       >
-      <footer>
-        <p>Gimli tailwind</p>
-      </footer>
     </section>
 
     <section class="slide bg clear">
@@ -495,10 +340,6 @@
     <section class="slide">
       <h2>Конфиг</h2>
       <img class="cover" src="./themes/tw/pictures/capabilites/config.svg" alt="Конфиг" />
-      <footer>
-        <p>Tailwind&nbsp;&mdash; c&nbsp;самого начала разрабатывалась с&nbsp;учётом индивидуальной настройки.</p>
-        <p>В&nbsp;этом разделе определяется всё что связано с&nbsp;дизайном сайта</p>
-      </footer>
     </section>
 
     <section class="slide">
@@ -528,13 +369,6 @@
     <section class="slide">
       <h2>Брекпоинты</h2>
       <img class="cover mt-10" src="./themes/tw/pictures/capabilites/screens/base.svg" alt="Брекпоинты" />
-      <footer>
-        <p>
-          Еще одно преимущество Tailwind заключается в&nbsp;том, что он&nbsp;позволяет создавать адаптивные интерфейсы.
-          Для этого в&nbsp;фреймворке есть специальные классы, которые позволяют изменять стили в&nbsp;зависимости
-          от&nbsp;размера экрана устройства, на&nbsp;котором отображается страница.
-        </p>
-      </footer>
     </section>
 
     <section class="slide">
@@ -560,38 +394,19 @@
       >
         <b class="text-red">!important плохо</b>
       </p>
-      <footer>
-        <p>
-          Эта конфигурация будет добавлять префикс ко&nbsp;всем вашим утилитам с&nbsp;данным селектором, эффективно
-          повышая их&nbsp;специфичность, не&nbsp;создавая при этом !important.
-        </p>
-      </footer>
-    </section>
-
-    <section class="slide">
-      <h2>!important</h2>
-      <img class="cover" src="./themes/tw/pictures/capabilites/important/variant-2.svg" alt="!important" />
-      <p
-        class="next w-[285px] translate-x-[650px] translate-y-[100px] rotate-45 rounded-sm bg-white px-2 py-1 text-4xl"
-      >
-        <b class="text-red">!important плохо</b>
-      </p>
-      <footer>
-        <p>Т.к. important плохо, то&nbsp;у&nbsp;Tailwind есть отличное решение (на&nbsp;след. слайде)</p>
-      </footer>
     </section>
 
     <section class="slide">
       <img
         class="cover"
-        src="./themes/tw/pictures/capabilites/important/using-variant-3.svg"
+        src="./themes/tw/pictures/capabilites/important/using-variant-2.svg"
         alt="Вес селектора на практике"
       />
     </section>
 
     <section class="slide">
       <h2>&laquo;Вес&raquo; селектора</h2>
-      <img class="cover" src="./themes/tw/pictures/capabilites/important/variant-3.svg" alt="Вес селектора" />
+      <img class="cover" src="./themes/tw/pictures/capabilites/important/variant-2.svg" alt="Вес селектора" />
     </section>
 
     <section class="slide">
@@ -635,34 +450,23 @@
       <a class="copyright" href="https://tailwindcss.com/docs/preflight" target="_blank" rel="noopener noreferrer"
         >preflight</a
       >
-      <footer>
-        <p>Preflight(предполетная подготовка)&nbsp;&mdash; набор базовых стилей для проектов Tailwind</p>
-        <p>
-          Preflight, созданный на&nbsp;базе modern-normalize, представляет собой набор базовых стилей для проектов
-          Tailwind, которые предназначены для сглаживания кросс-браузерных несоответствий и&nbsp;облегчения работы
-          в&nbsp;рамках ограничений нашей дизайн-системы.
-        </p>
-      </footer>
     </section>
 
     <section class="slide">
       <h2>Вендорные префиксы</h2>
       <img class="cover" src="./themes/tw/pictures/using/prefixes.svg" alt="Вендорные префиксы" />
-      <footer>
-        <p>Чтобы добиться такого результата есть несколько вариантов</p>
-      </footer>
     </section>
 
     <section class="slide">
       <h2>Вендорные префиксы</h2>
       <ul>
-        <li>
-          <a href="https://tailwindcss.com" target="_blank" rel="noopener noreferrer">TailwindCSS CLI</a>
-        </li>
         <li class="next">
           <a href="https://github.com/autoprefixer/autoprefixer.github.io" target="_blank" rel="noopener noreferrer"
             >Autoprefixer</a
           >
+        </li>
+        <li class="next">
+          <a href="https://tailwindcss.com" target="_blank" rel="noopener noreferrer">TailwindCSS CLI</a>
         </li>
       </ul>
     </section>
@@ -670,45 +474,20 @@
     <section class="slide">
       <h2>Доступность</h2>
       <img class="cover mt-10" src="./themes/tw/pictures/capabilites/a11y/sr-only.svg" alt="Доступность. Sr only" />
-      <footer>
-        <p>
-          Из&nbsp;коробки есть 2&nbsp;класса, если вам нужно что-то скрыть (можно использовать вместо visibility-hidden)
-        </p>
-      </footer>
-    </section>
-
-    <section class="slide">
-      <img class="cover" src="./themes/tw/pictures/capabilites/a11y/not-sr-only.svg" alt="Доступность. Not sr only" />
     </section>
 
     <section class="slide">
       <img class="cover" src="./themes/tw/pictures/capabilites/a11y/using.svg" alt="Доступность. Пример" />
-      <footer>
-        <p>
-          Используйте not-sr-only для отмены sr-only, делая элемент видимым, а&nbsp;также для программ чтения
-          с&nbsp;экрана. Это может быть полезно, если вы&nbsp;хотите визуально скрыть что-то на&nbsp;маленьких экранах,
-          но&nbsp;показать это на&nbsp;больших экранах, например:
-        </p>
-      </footer>
     </section>
 
     <section class="slide">
       <h2>Prefix для классов</h2>
       <img class="cover next" src="./themes/tw/pictures/capabilites/prefix.svg" alt="Prefix для классов" />
-      <footer>
-        <p>
-          Встречал на&nbsp;нашем портале Битрикс24 отдельные модули с&nbsp;префиксами, т.к.&nbsp;не&nbsp;использовались
-          css-modules и&nbsp;чтобы стили не&nbsp;пересекались добавляли префикс
-        </p>
-      </footer>
     </section>
 
     <section class="slide">
       <h2>Подключение плагинов</h2>
       <img class="cover" src="./themes/tw/pictures/libs-and-plugins/include.svg" alt="Подключение плагинов" />
-      <footer>
-        <p>О&nbsp;возможных плагинах поговорим позже</p>
-      </footer>
     </section>
 
     <section class="slide">
@@ -731,12 +510,6 @@
         <li>@apply</li>
         <li>@config</li>
       </ul>
-      <footer>
-        <p>
-          Директивы&nbsp;&mdash; это пользовательские at-правила , специфичные для Tailwind, которые можно использовать
-          в&nbsp;CSS и&nbsp;которые предлагают специальные функции для проектов Tailwind.
-        </p>
-      </footer>
     </section>
 
     <section class="slide">
@@ -747,13 +520,6 @@
     <section class="slide">
       <h2>@layer</h2>
       <img class="cover" src="./themes/tw/pictures/capabilites/directivies/layer.svg" alt="Layer" />
-      <footer>
-        <p>
-          Директива @layer помогает вам контролировать порядок объявления, автоматически перемещая ваши стили в
-          соответствующую @tailwind директиву, а&nbsp;также включает такие функции, как модификаторы и&nbsp;встряхивание
-          дерева для вашего собственного пользовательского CSS.
-        </p>
-      </footer>
     </section>
 
     <section class="slide">
@@ -764,9 +530,6 @@
     <section class="slide">
       <h2>@config</h2>
       <img class="cover" src="./themes/tw/pictures/capabilites/directivies/config.svg" alt="Config" />
-      <footer>
-        <p>Мы&nbsp;используем код из&nbsp;скриптов в&nbsp;стилях</p>
-      </footer>
     </section>
 
     <section class="slide">
@@ -775,21 +538,11 @@
         <li>theme()</li>
         <li>screen()</li>
       </ul>
-      <footer>
-        <p>
-          Tailwind добавляет несколько пользовательских функций, которые вы&nbsp;можете использовать в&nbsp;CSS для
-          доступа к&nbsp;значениям, специфичным для Tailwind. Эти функции оцениваются во&nbsp;время сборки
-          и&nbsp;заменяются статическими значениями в&nbsp;окончательном CSS.
-        </p>
-      </footer>
     </section>
 
     <section class="slide">
       <h2>theme()</h2>
       <img class="cover" src="./themes/tw/pictures/capabilites/functions/theme.svg" alt="Theme" />
-      <footer>
-        <p>Мы&nbsp;используем код из&nbsp;скриптов в&nbsp;стилях</p>
-      </footer>
     </section>
 
     <section class="slide">
@@ -798,7 +551,8 @@
     </section>
 
     <section class="slide relative">
-      <figure class="absolute left-1/2 top-1/2 w-[800px] -translate-x-1/2 -translate-y-1/2">
+      <h2>Just In&nbsp;Time (JIT)</h2>
+      <figure class="next absolute left-1/2 top-1/2 w-[800px] -translate-x-1/2 -translate-y-1/2">
         <blockquote>
           <p>
             В&nbsp;сочетании с&nbsp;минимизацией и&nbsp;сетевым сжатием это обычно приводит к&nbsp;созданию файлов CSS
@@ -843,21 +597,6 @@
         </blockquote>
         <figcaption>Nicolas Gallagher</figcaption>
       </figure>
-      <footer>
-        <p>user-profile&nbsp;&mdash; ui-card</p>
-        <p>Прежде чем начать, прочитаю одну цитату</p>
-        <p>
-          Это предложение взято из&nbsp;статьи Николаса Галлахера о&nbsp;семантике HTML и&nbsp;архитектуре интерфейса .
-          Это был поворотный момент для создателя и&nbsp;фронтмена Tailwind. Прочитав статью, он&nbsp;&laquo;полностью
-          убедился, что оптимизация для многократного использования CSS будет правильным выбором&raquo;.
-        </p>
-        <p>
-          Николас отмечает в&nbsp;статье, что масштабируемый HTML/CSS должен &laquo;полагаться на&nbsp;классы внутри
-          HTML, чтобы обеспечить возможность создания повторно используемых компонентов&raquo;. Чем более общее имя, тем
-          более оно пригодно для повторного использования. Он&nbsp;использовал знаменитый медиа-объект как яркий пример
-          многократного использования CSS.
-        </p>
-      </footer>
     </section>
 
     <section class="slide">
@@ -927,23 +666,14 @@
 
     <section class="slide">
       <img class="cover" src="./themes/tw/pictures/cases/btn/without.svg" alt="Решение без Tailwind" />
-      <footer>
-        <p>Решение без Tailwind</p>
-      </footer>
     </section>
 
     <section class="slide">
       <img class="cover" src="./themes/tw/pictures/cases/btn/with.svg" alt="Решение c Tailwind" />
-      <footer>
-        <p>Решение c&nbsp;Tailwind</p>
-      </footer>
     </section>
 
     <section class="slide">
       <img class="cover" src="./themes/tw/pictures/cases/nav/without.svg" alt="Навигация. Решение без Tailwind" />
-      <footer>
-        <p>Разберём пример с&nbsp;навигацией</p>
-      </footer>
     </section>
 
     <section class="slide">
@@ -952,9 +682,6 @@
 
     <section class="slide">
       <img class="cover" src="./themes/tw/pictures/cases/nav/with.svg" alt="Решение с Tailwind" />
-      <footer>
-        <p>Как видим&nbsp;&mdash; не&nbsp;сильно много классов</p>
-      </footer>
     </section>
 
     <section class="slide">
@@ -1007,9 +734,6 @@
     <section class="slide">
       <h2>Размеры элемента</h2>
       <img class="cover" src="./themes/tw/pictures/cases/size/step-2.svg" alt="Размеры элемента" />
-      <footer>
-        <p>Где брать готовые компоненты и&nbsp;шаблоны?</p>
-      </footer>
     </section>
 
     <section class="slide">
@@ -1051,10 +775,6 @@
     <section class="slide">
       <img class="cover" src="./themes/tw/pictures/libs-and-plugins/ui/promo.jpg" alt="Tailwind UI. Promo" />
       <a class="copyright" href="https://tailwindui.com" target="_blank" rel="noopener noreferrer">Tailwind UI</a>
-      <footer>
-        <p>Есть по&nbsp;одному бесплатному примеру на&nbsp;категорию, но&nbsp;к&nbsp;сожалению остальное платное</p>
-        <p>QR&nbsp;кодов не&nbsp;будет, если есть полезная ссылка, то&nbsp;будет в&nbsp;правом нижнем углу</p>
-      </footer>
     </section>
 
     <section class="slide">
@@ -1064,22 +784,6 @@
         alt="Tailwind UI. Source"
         height="250"
       />
-      <footer>
-        <p>Можно конечно вытащить исходники, но...</p>
-      </footer>
-    </section>
-
-    <section class="slide">
-      <img class="cover" src="./themes/tw/pictures/libs-and-plugins/catalyst.jpg" alt="Catalyst" />
-      <a class="copyright" href="https://catalyst.tailwindui.com">https://catalyst.tailwindui.com</a>
-      <footer>
-        <p>
-          Catalyst&nbsp;&mdash; это система компонентов с&nbsp;батарейным питанием и&nbsp;тщательно разработанными API,
-          включающая в&nbsp;себя все основные строительные блоки, необходимые для создания собственных приложений.
-          Он&nbsp;включает в&nbsp;себя такие элементы, как кнопки, элементы управления формами, диалоговые окна, слайды,
-          таблицы, раскрывающиеся списки и&nbsp;многое другое.
-        </p>
-      </footer>
     </section>
 
     <section class="slide">
@@ -1117,6 +821,9 @@
       <h2>Ещё библиотеки</h2>
       <ul class="columns two">
         <li class="next">
+          <a href="https://catalyst.tailwindui.com" target="_blank" rel="noopener noreferrer">Catalyst</a>
+        </li>
+        <li class="next">
           <a href="https://tw-elements.com" target="_blank" rel="noopener noreferrer">TW&nbsp;Elements</a>
         </li>
         <li class="next">
@@ -1147,9 +854,6 @@
           <a href="https://daisyui.com" target="_blank" rel="noopener noreferrer">Daisy UI</a>
         </li>
       </ul>
-      <footer>
-        <p>Сказать, что на&nbsp;Tailwind UI&nbsp;много платного и&nbsp;есть альтернативы</p>
-      </footer>
     </section>
 
     <section class="slide">
@@ -1188,14 +892,6 @@
         rel="noopener noreferrer"
         >eslint-plugin-tailwindcss</a
       >
-      <footer>
-        <p>classnames-order&nbsp;&mdash; упорядочите имена классов</p>
-        <p>
-          enforces-negative-arbitrary-values&nbsp;&mdash; обязательно необходимо использовать отрицательные произвольные
-          значения имени класса без отрицательного имени класса
-        </p>
-        <p>enforces-shorthand&nbsp;&mdash; объединить несколько имен классов в&nbsp;сокращенные обозначения</p>
-      </footer>
     </section>
 
     <section class="slide">
@@ -1237,17 +933,11 @@
     <section class="slide">
       <img class="cover" src="./themes/tw/pictures/libs-and-plugins/cva/logo.jpg" alt="CVA лого" />
       <a class="copyright" href="https://cva.style/docs" target="_blank" rel="noopener noreferrer">cva </a>
-      <footer>
-        <p>Кто-нибудь узнает по&nbsp;логотипу инструмент?</p>
-      </footer>
     </section>
 
     <section class="slide">
       <img class="cover" src="./themes/tw/pictures/libs-and-plugins/cva/using.svg" alt="CVA использование" />
       <a class="copyright" href="https://cva.style/docs" target="_blank" rel="noopener noreferrer">cva </a>
-      <footer>
-        <p>На&nbsp;мой взгляд, этот фрагмент очень хорошо организован, и&nbsp;его можно понять уже после прочтения.</p>
-      </footer>
     </section>
 
     <section class="slide">
@@ -1258,20 +948,6 @@
         target="_blank"
         rel="noopener noreferrer"
         >tailwindcss-container-queries</a
-      >
-      <footer>
-        <p>Официальный плагин</p>
-      </footer>
-    </section>
-
-    <section class="slide">
-      <img class="cover" src="./themes/tw/pictures/libs-and-plugins/figma/promo.jpg" alt="Figma tailwindcss. Promo" />
-      <a
-        class="copyright"
-        href="https://www.figma.com/community/plugin/785619431629077634/figma-tailwindcss?searchSessionId=lto5775p-yvu9kzvah5o"
-        target="_blank"
-        rel="noopener noreferrer"
-        >figma-tailwindcss</a
       >
     </section>
 
@@ -1354,10 +1030,19 @@
     </section>
 
     <section class="slide">
-      <h2>Подсветка в&nbsp;PHP Storm</h2>
+      <img
+        class="cover h-[400px] rounded-sm"
+        src="./themes/tw/pictures/libs-and-plugins/php-storm/enabling.jpg"
+        height="400"
+        alt="Включение плагина в PHP Storm"
+      />
+    </section>
+
+    <section class="slide">
+      <h2>Подсказки в&nbsp;PHP Storm</h2>
       <img
         class="cover h-[170px] rounded-sm"
-        src="./themes/tw/pictures/libs-and-plugins/php-storm.jpg"
+        src="./themes/tw/pictures/libs-and-plugins/php-storm/using.jpg"
         height="170"
         alt="PHP Storm"
       />
@@ -1390,9 +1075,6 @@
       >
         Нажми меня
       </button>
-      <footer>
-        <p>Будущее уже здесь. Выходит плагин и&nbsp;уже в&nbsp;README описаны настройки и&nbsp;tailwind</p>
-      </footer>
       <script>
         document.addEventListener('DOMContentLoaded', function () {
           const uploadIframe = document.querySelector('#upload-iframe');
@@ -1427,22 +1109,6 @@
           >
         </li>
       </ul>
-      <footer>
-        <p>
-          Еще одним преимуществом Tailwind является его модульность. Он&nbsp;состоит из&nbsp;множества небольших
-          модулей, которые можно использовать по&nbsp;отдельности или в&nbsp;комбинации друг с&nbsp;другом. Это дает
-          разработчикам возможность выбирать только те&nbsp;модули, которые нужны для конкретного проекта,
-          и&nbsp;не&nbsp;нагружать страницу лишним кодом.
-        </p>
-        <p>
-          Кроме того, Tailwind предоставляет множество инструментов для упрощения разработки, таких как автодополнение
-          классов в&nbsp;редакторе кода, визуальные инструменты для настройки цветовой схемы и&nbsp;многое другое.
-        </p>
-        <p>
-          Кроме того, благодаря использованию Tailwind, у&nbsp;разработчиков есть возможность сосредоточиться
-          на&nbsp;логике и&nbsp;функциональности приложения, вместо того, чтобы тратить время на&nbsp;написание стилей.
-        </p>
-      </footer>
     </section>
 
     <section class="slide">
@@ -1456,18 +1122,6 @@
         <li class="next">Встроенная @import обработка</li>
         <li class="next">Встроенный префикс поставщика</li>
       </ul>
-      <footer>
-        <p>
-          Еще рано, и&nbsp;нам предстоит много работы, но&nbsp;сегодня мы&nbsp;открываем исходный код нашего прогресса
-          и&nbsp;отмечаем первую общедоступную альфа-версию 4.0.0, чтобы вы&nbsp;могли начать с&nbsp;ней
-          экспериментировать и&nbsp;помочь нам выйти на&nbsp;стабильную версию. позже в&nbsp;этом году.
-        </p>
-        <p>
-          Новый движок&nbsp;&mdash; это переписанный с&nbsp;нуля, в&nbsp;нем используется все, что мы&nbsp;знаем
-          о&nbsp;фреймворке сейчас, чтобы лучше моделировать проблемное пространство, что ускоряет работу с&nbsp;гораздо
-          меньшим количеством кода.
-        </p>
-      </footer>
     </section>
 
     <section class="slide clear">
@@ -1487,9 +1141,6 @@
           <a href="https://tachyons.io" target="_blank" rel="noopener noreferrer">Tachyons</a>
         </li>
       </ul>
-      <footer>
-        <p>Многие UI&nbsp;фреймворки пишутся на&nbsp;Tailwind</p>
-      </footer>
     </section>
 
     <section class="slide relative">
@@ -1501,40 +1152,14 @@
       >
         А&nbsp;зачем?
       </p>
-      <footer>
-        <p>
-          Самое важное, что нужно понимать при использовании Tailwind с&nbsp;препроцессором,&nbsp;&mdash; это&nbsp;то,
-          что препроцессоры, такие как SASS, Less и&nbsp;Stylus, запускаются отдельно до&nbsp;Tailwind. Это означает,
-          что вы&nbsp;не&nbsp;можете передавать выходные данные функции Tailwind, theme()например, в&nbsp;функцию цвета
-          SASS, потому что функция theme()фактически не&nbsp;оценивается до&nbsp;тех пор, пока ваш SASS не&nbsp;будет
-          скомпилирован в&nbsp;CSS и&nbsp;не&nbsp;передан в&nbsp;PostCSS.
-        </p>
-        <p>
-          Поскольку Tailwind&nbsp;&mdash; это плагин PostCSS, ничто не&nbsp;мешает вам использовать его с&nbsp;SASS,
-          точно так&nbsp;же, как вы&nbsp;можете использовать другие плагины PostCSS, такие как Autoprefixer .
-        </p>
-        <p>
-          С&nbsp;Tailwind у&nbsp;нас есть предопределенный набор стилей, тогда как с&nbsp;SASS у&nbsp;нас больше
-          контроля над отдельными компонентами
-        </p>
-      </footer>
     </section>
 
     <section class="slide">
       <img class="cover" src="./themes/tw/pictures/alternatives/sass/flex.svg" alt="Sass. Flex" />
-      <footer>
-        <p>
-          Flexbox настолько юзабельная штука, что сейчас от&nbsp;проекта к&nbsp;проекту приходится копировать классы
-          (мы&nbsp;создаем Tailwind?)
-        </p>
-      </footer>
     </section>
 
     <section class="slide">
       <img class="cover" src="./themes/tw/pictures/alternatives/sass/mixins.svg" alt="Sass. Mixins" />
-      <footer>
-        <p>Теперь не&nbsp;нужны миксины и&nbsp;можем создавать свои utilities классы</p>
-      </footer>
     </section>
 
     <section class="slide">
@@ -1546,13 +1171,13 @@
             <th scope="column">CSS-modules (+SASS)</th>
             <th scope="column">CSS-in-JS</th>
             <th scope="column">Семантический CSS</th>
-            <th scope="column">Tailwind</th>
+            <th scope="column">TailwindCSS</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <th scope="row">Size Bundle</th>
-            <td>&#9989;</td>
+            <td>&#10060;</td>
             <td>&#10060;</td>
             <td>&#9989;</td>
             <td>&#128640;</td>
@@ -1566,9 +1191,9 @@
           </tr>
           <tr>
             <th scope="row">Better Tooling</th>
+            <td>&#10060;</td>
             <td>&#9989;</td>
-            <td>&#9989;</td>
-            <td>&#9989;</td>
+            <td>&#10060;</td>
             <td>&#9989;</td>
           </tr>
           <tr>
@@ -1587,7 +1212,7 @@
           </tr>
           <tr>
             <th scope="row">Performance Optimizations</th>
-            <td>&#9989;</td>
+            <td>&#10060;</td>
             <td>&#10060;</td>
             <td>&#9989;</td>
             <td>&#9989;</td>
@@ -1597,7 +1222,7 @@
             <td>&#9989;</td>
             <td>&#9989;</td>
             <td>&#9989;</td>
-            <td>&#9989;</td>
+            <td>&#10060;</td>
           </tr>
           <tr>
             <th scope="row">Debugging Complexity</th>
@@ -1633,20 +1258,38 @@
     </section>
 
     <section class="slide">
+      <h2 class="shout">Как учить?</h2>
+    </section>
+
+    <section class="slide">
+      <img class="cover h-[450px]" src="./themes/tw/pictures/docs.jpg" height="450" alt="Документация" />
+    </section>
+
+    <section class="slide">
       <h2 class="shout">Когда можно использовать?</h2>
     </section>
 
     <section class="slide">
-      <img class="cover h-[400px]" src="./themes/tw/pictures/nextjs-starter.jpg" height="400" alt="Next.js starter" />
+      <img class="cover h-[400px]" src="./themes/tw/images/wp/nextjs-starter.jpg" height="400" alt="Next.js starter" />
       <a class="copyright" href="https://github.com/webpractik/nextjs-starter">nextjs-starter</a>
     </section>
 
     <section class="slide relative">
       <h2>Coming soon</h2>
-      <div class="absolute left-1/2 top-1/2 flex w-[90%] -translate-x-1/2 -translate-y-1/2 justify-between">
+      <div
+        class="absolute left-1/2 top-1/2 mt-[50px] flex flex w-[90%] -translate-x-1/2 -translate-y-1/2 flex-wrap items-center justify-center justify-around gap-[50px]"
+      >
         <img class="next" src="./themes/tw/images/wp/logo.svg" width="250" height="250" alt="Wp team" />
         <img class="next" src="./themes/tw/images/wp/wp-team.svg" width="250" height="250" alt="Wp logo" />
-        <img class="next rounded-sm" src="./themes/tw/images/wp/cp.web.jpg" width="250" height="250" alt="Cp web" />
+        <img class="next" src="./themes/tw/images/wp/inner.svg" width="250" height="50" alt="Inner" />
+        <img
+          class="next"
+          src="./themes/tw/images/wp/onlineconverter.svg"
+          width="320"
+          height="50"
+          alt="Onlineconverter"
+        />
+        <img class="next" src="./themes/tw/images/wp/2pdf.svg" width="250" height="50" alt="2pdf" />
       </div>
     </section>
 
@@ -1658,9 +1301,6 @@
         <li class="next"><b>научиться решать</b> задачи</li>
         <li class="next"><b>научить решать</b> задачи</li>
       </ul>
-      <footer>
-        <p>Прежде чем начнем говорить об&nbsp;инструменте, вспомним о&nbsp;задаче которую решаем.</p>
-      </footer>
     </section>
 
     <section class="slide">
@@ -1672,13 +1312,6 @@
         <li class="next">Позволяет уменьшить когнитивную нагрузку</li>
         <li class="next">Хорошо спроектирован (нулевое время выполнения)</li>
       </ol>
-      <footer>
-        <p>
-          В&nbsp;итоге, Tailwind является очень полезным инструментом для разработки пользовательских интерфейсов,
-          который позволяет значительно ускорить процесс создания и&nbsp;поддержки кода, а&nbsp;также создавать
-          уникальные и&nbsp;адаптивные интерфейсы без необходимости писать каждый раз новые стили.
-        </p>
-      </footer>
     </section>
 
     <section class="slide bg clear">
