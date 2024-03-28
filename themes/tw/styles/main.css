@@ -96,13 +96,8 @@
         @apply text-white;
       }
 
-      th[scope='column'],
-      td {
+      th[scope='column'] {
         @apply text-center;
-
-        img {
-          @apply m-auto;
-        }
       }
 
       th {
@@ -113,6 +108,10 @@
         @apply text-[20px];
       }
     }
+  }
+
+  table img {
+    @apply mx-auto;
   }
 
   .scrollbar {
