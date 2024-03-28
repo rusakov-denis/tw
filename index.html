@@ -12,7 +12,7 @@
   <body class="shower list scrollbar bg-purple-dark">
     <header class="caption">
       <h1>TailwindCSS: Попутный ветер перемен</h1>
-      <p>
+      <p class="mt-2">
         <i>Денис Русаков</i>
       </p>
     </header>
@@ -119,7 +119,7 @@
         <li class="next">Большое кол-во дублей в&nbsp;сборке</li>
         <li class="next">Импорт конфигов в&nbsp;каждом файле</li>
         <li class="next">Некоторые препроцессоры устарели</li>
-        <li class="next">Повторяющиеся обертки-компоненты (Box, Flex, Grid, AspectRatio и&nbsp;т.д.)</li>
+        <li class="next">Повторяющиеся обертки-компоненты (Box, Flex, Grid)</li>
         <li class="next">Необходимо писать темизацию</li>
       </ul>
     </section>
@@ -414,6 +414,11 @@
       <img class="cover mt-10" src="./themes/tw/pictures/capabilites/animations/settings.svg" alt="Анимации" />
     </section>
 
+    <section class="slide">
+      <h2>Keyframes</h2>
+      <img class="cover mt-12" src="./themes/tw/pictures/capabilites/animations/keyframes.svg" alt="Keyframes" />
+    </section>
+
     <section class="slide relative">
       <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
         <button
@@ -432,11 +437,6 @@
           Обработка...
         </button>
       </div>
-    </section>
-
-    <section class="slide">
-      <h2>Keyframes</h2>
-      <img class="cover mt-12" src="./themes/tw/pictures/capabilites/animations/keyframes.svg" alt="Keyframes" />
     </section>
 
     <section class="slide">
@@ -460,7 +460,7 @@
     <section class="slide">
       <h2>Вендорные префиксы</h2>
       <ul>
-        <li class="next">
+        <li>
           <a href="https://github.com/autoprefixer/autoprefixer.github.io" target="_blank" rel="noopener noreferrer"
             >Autoprefixer</a
           >
@@ -550,14 +550,27 @@
       <img class="cover" src="./themes/tw/pictures/capabilites/functions/screen.svg" alt="Screen" />
     </section>
 
-    <section class="slide relative">
+    <section class="slide">
       <h2>Just In&nbsp;Time (JIT)</h2>
-      <figure class="next absolute left-1/2 top-1/2 w-[800px] -translate-x-1/2 -translate-y-1/2">
+      <figure class="absolute left-1/2 top-1/2 w-[800px] -translate-x-1/2 -translate-y-1/2">
         <blockquote>
           <p>
-            В&nbsp;сочетании с&nbsp;минимизацией и&nbsp;сетевым сжатием это обычно приводит к&nbsp;созданию файлов CSS
-            размером менее 10&nbsp;КБ даже для больших проектов. Например, Netflix использует Tailwind для Netflix
-            Top&nbsp;10, а&nbsp;весь веб-сайт передает по&nbsp;сети только 6,5&nbsp;КБ CSS.
+            Tailwind представляет компилятор, который генерирует ваши стили по запросу, когда вы создаете свои шаблоны,
+            вместо того, чтобы создавать всё заранее во время начальной сборки
+          </p>
+        </blockquote>
+        <figcaption>Документация</figcaption>
+      </figure>
+    </section>
+
+    <section class="slide relative">
+      <h2>Оптимизация</h2>
+      <figure class="absolute left-1/2 top-1/2 w-[800px] -translate-x-1/2 -translate-y-1/2">
+        <blockquote>
+          <p>
+            Сочетание минимизации и&nbsp;сетевого сжатия приводит к&nbsp;созданию CSS файлов размером менее 10&nbsp;КБ
+            даже для больших проектов. Например, Netflix использует Tailwind для Netflix Top&nbsp;10, а&nbsp;весь сайт
+            передает по&nbsp;сети только 6,5&nbsp;КБ.
           </p>
         </blockquote>
         <figcaption>Документация</figcaption>
@@ -567,15 +580,12 @@
     <section class="slide">
       <h2>Оптимизация</h2>
       <ul>
-        <li class="next">Опция <i>&mdash;minify</i> (Tailwind CLI)</li>
+        <li>Опция <i>&mdash;minify</i> (Tailwind CLI)</li>
         <li class="next"><a href="https://cssnano.co" target="_blank" rel="noopener noreferrer">CSSNano</a></li>
         <li class="next">
           <a href="https://github.com/google/brotli" target="_blank" rel="noopener noreferrer">Brotli</a>
         </li>
       </ul>
-      <a class="copyright" href="https://habr.com/ru/articles/774524" target="_blank" rel="noopener noreferrer">
-        Сравнение производительности
-      </a>
     </section>
 
     <section class="slide">
@@ -788,7 +798,7 @@
 
     <section class="slide">
       <img class="cover" src="./themes/tw/pictures/libs-and-plugins/radix/promo.jpg" alt="Radix UI. Promo" />
-      <a class="copyright" href="https://www.radix-ui.com">https://www.radix-ui.com</a>
+      <a class="copyright" href="https://www.radix-ui.com">radix-ui</a>
     </section>
 
     <section class="slide">
@@ -906,14 +916,7 @@
     </section>
 
     <section class="slide">
-      <img class="cover" src="./themes/tw/pictures/libs-and-plugins/merge/simple.svg" alt="Tw-merge простой пример" />
-      <a class="copyright" href="https://www.npmjs.com/package/tailwind-merge" target="_blank" rel="noopener noreferrer"
-        >tailwind-merge
-      </a>
-    </section>
-
-    <section class="slide">
-      <img class="cover" src="./themes/tw/pictures/libs-and-plugins/merge/hard.svg" alt="Tw-merge сложный пример" />
+      <img class="cover" src="./themes/tw/pictures/libs-and-plugins/merge/example.svg" alt="Tw-merge пример" />
       <a class="copyright" href="https://www.npmjs.com/package/tailwind-merge" target="_blank" rel="noopener noreferrer"
         >tailwind-merge
       </a>
@@ -1069,7 +1072,7 @@
         height="95%"
       ></iframe>
       <button
-        class="absolute relative left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-sm bg-blue px-4 text-white"
+        class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-sm bg-blue px-4 text-white transition-colors hover:bg-blue/80 hover:text-white"
         type="button"
         id="upload-iframe"
       >
@@ -1177,59 +1180,59 @@
         <tbody>
           <tr>
             <th scope="row">Size Bundle</th>
-            <td>&#10060;</td>
-            <td>&#10060;</td>
-            <td>&#9989;</td>
-            <td>&#128640;</td>
+            <td><img src="./themes/tw/images/emoji/cross.svg" alt="Cross" width="16" height="16" /></td>
+            <td><img src="./themes/tw/images/emoji/cross.svg" alt="Cross" width="16" height="16" /></td>
+            <td><img src="./themes/tw/images/emoji/arrow.svg" alt="Arrow" width="16" height="16" /></td>
+            <td><img src="./themes/tw/images/emoji/rocket.svg" alt="Rocket" width="16" height="16" /></td>
           </tr>
           <tr>
             <th scope="row">Scoped Styles</th>
-            <td>&#9989;</td>
-            <td>&#9989;</td>
-            <td>&#10060;</td>
-            <td>&#9989;</td>
+            <td><img src="./themes/tw/images/emoji/arrow.svg" alt="Arrow" width="16" height="16" /></td>
+            <td><img src="./themes/tw/images/emoji/arrow.svg" alt="Arrow" width="16" height="16" /></td>
+            <td><img src="./themes/tw/images/emoji/cross.svg" alt="Cross" width="16" height="16" /></td>
+            <td><img src="./themes/tw/images/emoji/arrow.svg" alt="Arrow" width="16" height="16" /></td>
           </tr>
           <tr>
             <th scope="row">Better Tooling</th>
-            <td>&#10060;</td>
-            <td>&#9989;</td>
-            <td>&#10060;</td>
-            <td>&#9989;</td>
+            <td><img src="./themes/tw/images/emoji/cross.svg" alt="Cross" width="16" height="16" /></td>
+            <td><img src="./themes/tw/images/emoji/arrow.svg" alt="Arrow" width="16" height="16" /></td>
+            <td><img src="./themes/tw/images/emoji/cross.svg" alt="Cross" width="16" height="16" /></td>
+            <td><img src="./themes/tw/images/emoji/arrow.svg" alt="Arrow" width="16" height="16" /></td>
           </tr>
           <tr>
             <th scope="row">Runtime Overhead</th>
-            <td>&#10060;</td>
-            <td>&#10060;</td>
-            <td>&#9989;</td>
-            <td>&#9989;</td>
+            <td><img src="./themes/tw/images/emoji/cross.svg" alt="Cross" width="16" height="16" /></td>
+            <td><img src="./themes/tw/images/emoji/cross.svg" alt="Cross" width="16" height="16" /></td>
+            <td><img src="./themes/tw/images/emoji/arrow.svg" alt="Arrow" width="16" height="16" /></td>
+            <td><img src="./themes/tw/images/emoji/arrow.svg" alt="Arrow" width="16" height="16" /></td>
           </tr>
           <tr>
             <th scope="row">Dynamic Styles</th>
-            <td>&#9989;</td>
-            <td>&#9989;</td>
-            <td>&#10060;</td>
-            <td>&#9989;</td>
+            <td><img src="./themes/tw/images/emoji/arrow.svg" alt="Arrow" width="16" height="16" /></td>
+            <td><img src="./themes/tw/images/emoji/arrow.svg" alt="Arrow" width="16" height="16" /></td>
+            <td><img src="./themes/tw/images/emoji/cross.svg" alt="Cross" width="16" height="16" /></td>
+            <td><img src="./themes/tw/images/emoji/arrow.svg" alt="Arrow" width="16" height="16" /></td>
           </tr>
           <tr>
             <th scope="row">Performance Optimizations</th>
-            <td>&#10060;</td>
-            <td>&#10060;</td>
-            <td>&#9989;</td>
-            <td>&#9989;</td>
+            <td><img src="./themes/tw/images/emoji/cross.svg" alt="Cross" width="16" height="16" /></td>
+            <td><img src="./themes/tw/images/emoji/cross.svg" alt="Cross" width="16" height="16" /></td>
+            <td><img src="./themes/tw/images/emoji/arrow.svg" alt="Arrow" width="16" height="16" /></td>
+            <td><img src="./themes/tw/images/emoji/arrow.svg" alt="Arrow" width="16" height="16" /></td>
           </tr>
           <tr>
             <th scope="row">Learning Curve</th>
-            <td>&#9989;</td>
-            <td>&#9989;</td>
-            <td>&#9989;</td>
-            <td>&#10060;</td>
+            <td><img src="./themes/tw/images/emoji/arrow.svg" alt="Arrow" width="16" height="16" /></td>
+            <td><img src="./themes/tw/images/emoji/arrow.svg" alt="Arrow" width="16" height="16" /></td>
+            <td><img src="./themes/tw/images/emoji/arrow.svg" alt="Arrow" width="16" height="16" /></td>
+            <td><img src="./themes/tw/images/emoji/cross.svg" alt="Cross" width="16" height="16" /></td>
           </tr>
           <tr>
             <th scope="row">Debugging Complexity</th>
-            <td>&#9989;</td>
-            <td>&#9989;</td>
-            <td>&#9989;</td>
-            <td>&#10060;</td>
+            <td><img src="./themes/tw/images/emoji/arrow.svg" alt="Arrow" width="16" height="16" /></td>
+            <td><img src="./themes/tw/images/emoji/arrow.svg" alt="Arrow" width="16" height="16" /></td>
+            <td><img src="./themes/tw/images/emoji/arrow.svg" alt="Arrow" width="16" height="16" /></td>
+            <td><img src="./themes/tw/images/emoji/cross.svg" alt="Cross" width="16" height="16" /></td>
           </tr>
         </tbody>
       </table>
@@ -1281,7 +1284,7 @@
       >
         <img class="next" src="./themes/tw/images/wp/logo.svg" width="250" height="250" alt="Wp team" />
         <img class="next" src="./themes/tw/images/wp/wp-team.svg" width="250" height="250" alt="Wp logo" />
-        <img class="next" src="./themes/tw/images/wp/inner.svg" width="250" height="50" alt="Inner" />
+        <img class="next" src="./themes/tw/images/wp/bx24.png" width="250" height="50" alt="BX24" />
         <img
           class="next"
           src="./themes/tw/images/wp/onlineconverter.svg"
